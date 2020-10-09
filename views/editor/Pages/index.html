@@ -1,0 +1,22 @@
+<import: src="../Components/cell">
+<import: src="../Components/section">
+
+<Title:>
+    Editor
+
+<Head:>
+    <script src="https://kit.fontawesome.com/f5b352626b.js" crossorigin="anonymous"></script>
+
+<Body:>
+    <!-- <nav>
+        {{each navItems($render.ns) as #item}}
+        {{if #item.isCurrent}}
+            <b>{{#item.title}}</b>
+        {{else}}
+            <a href={{#item.href}}>{{#item.title}}</a>
+        {{/if}}
+        {{unless #item.isLast}} | {{/unless}}
+        {{/each}}
+        <hr>
+    </nav> -->
+    <view is="{{$render.ns}}"></view>

@@ -1,0 +1,71 @@
+body {
+    height: 100vh;
+}
+
+/* 
+    SECTION
+*/
+
+.section {
+    width: calc(100% - 16px);
+    display: grid;
+    margin: 8px;
+}
+
+/*
+    SECTION ADJUST
+*/
+
+.section-adjust {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px auto;
+    height: 100%;
+    width: 2px;
+    overflow: visible;
+    cursor: ew-resize;
+    z-index: 1;
+}
+
+.section-adjust i {
+    background-color: gray;
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* 
+    CELL
+*/
+
+.cell-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 8px 0px;
+    overflow-x: hidden;
+}
+
+.cell-data {
+    white-space: pre-wrap;
+    height: 100% !important;
+    width: 100%;
+    min-height: 200px;
+    padding: 16px;
+    word-wrap: break-word;
+}
+
+.cell {
+    position: absolute;
+    min-height: 200px;
+    height: 100% !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    /* overflow-x: scroll; */
+}
