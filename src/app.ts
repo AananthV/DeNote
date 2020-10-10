@@ -12,10 +12,7 @@ import * as Logger from "bunyan";
 import ShareDbMongo from "sharedb-mongo";
 
 import errorMiddleware from "./Middlewares/error.middleware";
-// import authMiddleware from "./Middlewares/auth.middleware";
-
 import AppInitialiser from "./Interfaces/misc/appInitialiser.interface";
-import Controller from "./Interfaces/controller/controller.interface";
 
 derby.use(racerBundle);
 
@@ -115,7 +112,7 @@ class App {
 
     public pushApps() {
         this.derbyApps.forEach(app => {
-            app.derbyApp.writeScripts(this.backend, '/home/aananth/dev/NoteD/public', {}, (err) => {
+            app.derbyApp.writeScripts(this.backend, '/home/aananth/dev/DeNote/public', {}, (err) => {
                 if (err) console.log(err);
             });
         })

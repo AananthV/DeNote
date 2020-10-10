@@ -14,7 +14,7 @@ const app = derby.createApp('auth', __filename);
 
 // app.serverUse(module, '../base/Utils/derbyLess');
 
-app.loadViews('/home/aananth/dev/NoteD/views/auth/Pages/register.html');
+app.loadViews('/home/aananth/dev/DeNote/views/auth/Pages/register.html');
 
 initializeComponents(app, components);
 

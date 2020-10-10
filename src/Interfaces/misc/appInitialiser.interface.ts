@@ -1,4 +1,3 @@
-import Controller from "../controller/controller.interface";
 import Logger from "bunyan";
 
 interface AppInitialiser {

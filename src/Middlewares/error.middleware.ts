@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import HttpException from "../Classes/HttpException";
+import HttpException from "../Apps/base/Classes/HttpException";
 
 function errorMiddleware(
   error: HttpException,

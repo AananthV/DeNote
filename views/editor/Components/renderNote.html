@@ -1,0 +1,9 @@
+<index:>
+    <div class="render">
+        <div id="note-{{ id }}" class="note">
+            {{ each sections as #section, #i }}
+                <view is="editor:render-section" section="{{ #section }}" index="{{ #i }}"/>
+                <hr>
+            {{ /each }}
+        </div>
+    </div>

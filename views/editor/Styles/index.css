@@ -1,12 +1,24 @@
-body {
+html {
     height: 100vh;
+}
+
+/************************************************************
+    EDIT
+************************************************************/
+
+/*
+    NOTE
+*/
+
+.edit .note {
+    padding: 0;
 }
 
 /* 
     SECTION
 */
 
-.section {
+.edit .section {
     width: calc(100% - 16px);
     display: grid;
     margin: 8px;
@@ -16,20 +28,20 @@ body {
     SECTION ADJUST
 */
 
-.section-adjust {
+.edit .section-adjust {
     background-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 8px auto;
+    margin: 0px auto;
     height: 100%;
-    width: 2px;
+    width: 1px;
     overflow: visible;
     cursor: ew-resize;
     z-index: 1;
 }
 
-.section-adjust i {
+.edit .section-adjust i {
     background-color: gray;
     padding: 4px;
     border: 1px solid;
@@ -42,15 +54,15 @@ body {
     CELL
 */
 
-.cell-container {
+.edit .cell {
     position: relative;
     height: 100%;
     width: 100%;
-    margin: 8px 0px;
+    margin: 0px;
     overflow-x: hidden;
 }
 
-.cell-data {
+.edit .cell-data {
     white-space: pre-wrap;
     height: 100% !important;
     width: 100%;
@@ -59,7 +71,7 @@ body {
     word-wrap: break-word;
 }
 
-.cell {
+.edit .cell-editor {
     position: absolute;
     min-height: 200px;
     height: 100% !important;
@@ -68,4 +80,51 @@ body {
     left: 0;
     overflow-y: hidden;
     /* overflow-x: scroll; */
+}
+
+/************************************************************
+    RENDER
+************************************************************/
+
+/*
+    NOTE
+*/
+
+.render .note {
+    padding: 0;
+}
+
+/* 
+    SECTION
+*/
+
+.render .section {
+    width: calc(100% - 16px);
+    display: grid;
+    margin: 8px;
+}
+
+/* 
+    CELL
+*/
+
+.render .cell {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.render .cell-data {
+    white-space: pre-wrap;
+    height: 100% !important;
+    width: 100%;
+    padding: 16px;
+    word-wrap: break-word;
+}
+
+.render .cell-data img {
+    width: 100%;
+    height: auto;
 }

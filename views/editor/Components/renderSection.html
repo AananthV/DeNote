@@ -1,0 +1,9 @@
+<index:>
+    <div id="section-{{ id }}" class="section" style="grid-template-columns: repeat({{ cells.length * 10 }}, 1fr);">
+        {{ each cells as #cell, #i }}
+            <view is="editor:render-cell" cell="{{ #cell }}" index="{{ #i }}"/>
+            <!-- {{ if #i + 1 !== cells.length }}
+                <view is="section-adjust" index="{{ #i }}"/>
+            {{ /if }} -->
+        {{ /each }}
+    </div>

@@ -4,10 +4,10 @@ class CellOptions {
     editing: boolean = false;
 }
 
-class CellComponent extends Component {
-    static view = '/home/aananth/dev/NoteD/views/editor/Components/cell.html';
+class EditCellComponent extends Component {
+    static view = '/home/aananth/dev/DeNote/views/editor/Components/editCell.html';
     static DataConstructor = CellOptions;
-    static is = 'editor-cell';
+    static is = 'editor:edit-cell';
 
     private model: any;
     private getAttribute: any;
@@ -18,8 +18,19 @@ class CellComponent extends Component {
     parent: any;
     editing: any;
     editor: HTMLTextAreaElement;
+    data: any;
+    type: any;
+    width: any;
+    index: any;
 
     init() {
+        // Attributes passed from section
+        this.data = this.model.ref('data', this.model.at('cell.data'));
+        this.type = this.model.ref('type', this.model.at('cell.type'));
+        this.width = this.model.ref('width', this.model.at('cell.width'));
+        this.index = this.model.at('index');
+
+        // Cell Options
         this.editing = this.model.at('editing');
     }
 
@@ -34,14 +45,15 @@ class CellComponent extends Component {
         else this.editor.focus();
     }
 
-    handleKeyDown(event: KeyboardEvent, element: HTMLElement, index: number) {
+    handleKeyDown(event: KeyboardEvent, element: HTMLElement) {
+        // TODO: Tab to indent
         const editing = this.editing.get();
         if (event.key === 'i' && event.ctrlKey) {
             this.toggleEditMode();
         } else if (!editing) {
-            this.parent.handleCellKeyDown(event, index, );
+            this.parent.handleCellKeyDown(event, this.index.get());
         }
     }
 }
 
-export default CellComponent;
+export default EditCellComponent;

@@ -26,6 +26,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.2.3",
     "@types/express-session": "^1.17.0",
+    "@types/marked": "^1.1.0",
     "bcrypt": "^5.0.0",
     "bootstrap": "^4.5.2",
     "browserify": "^16.5.2",
@@ -44,6 +45,7 @@
     "jquery": "^3.5.1",
     "jsonwebtoken": "^8.5.1",
     "less": "^3.12.2",
+    "marked": "^1.2.0",
     "mongoose": "^5.10.8",
     "popper.js": "^1.16.1",
     "racer": "^0.9.16",

@@ -1,7 +1,7 @@
 <index:>
-    <div id="section-{{ id }}" as="section" class="section" style="grid-template-columns: repeat({{ cells.length * 11 - 1 }}, 1fr);">
+    <div id="section-{{ id }}" class="section" style="grid-template-columns: repeat({{ cells.length * 11 - 1 }}, 1fr);">
         {{ each cells as #cell, #i }}
-            <view is="editor-cell" cell="{{ #cell }}" index="{{ #i }}"/>
+            <view is="editor:edit-cell" cell="{{ #cell }}" index="{{ #i }}"/>
             {{ if #i + 1 !== cells.length }}
                 <view is="section-adjust" index="{{ #i }}"/>
             {{ /if }}
@@ -10,5 +10,5 @@
 
 <section-adjust:>
     <div class="section-adjust" on-mousedown="resizeStart($event, @index)">
-        <i class="fas fa-exchange-alt" on-click="swap($event, @index, @index + 1)"></i>
+        <!-- <i class="fas fa-exchange-alt" on-click="swap($event, @index, @index + 1)"></i> -->
     </div>

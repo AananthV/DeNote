@@ -11004,8 +11004,8 @@ function App(derby, name, filename, options) {
   this.derby = derby;
   this.name = name;
   this.filename = filename;
-  this.scriptHash = 'ae8a31c0f6eb57fe425940dc4927518e';
-  this.bundledAt = 1602256999963;
+  this.scriptHash = 'f4b965c9e431ab5e673706f183719532';
+  this.bundledAt = 1602323954733;
   this.Page = createAppPage(derby);
   this.proto = this.Page.prototype;
   this.views = new templates.Views();
@@ -28146,7 +28146,7 @@ var RegisterComponent = /** @class */ (function (_super) {
     RegisterComponent.prototype.increase = function () {
         this.value.set(this.value.get() + 1);
     };
-    RegisterComponent.view = '/home/aananth/dev/NoteD/views/auth/Components/register.html';
+    RegisterComponent.view = '/home/aananth/dev/DeNote/views/auth/Components/register.html';
     RegisterComponent.DataConstructor = RegisterData;
     RegisterComponent.is = 'auth-register';
     return RegisterComponent;
@@ -28168,7 +28168,7 @@ var components = [
 ];
 var app = derby_1.default.createApp('auth', __filename);
 // app.serverUse(module, '../base/Utils/derbyLess');
-app.loadViews('/home/aananth/dev/NoteD/views/auth/Pages/register.html');
+app.loadViews('/home/aananth/dev/DeNote/views/auth/Pages/register.html');
 application_1.initializeComponents(app, components);
 exports.default = app;
 
@@ -28196,4 +28196,4 @@ module.exports = new Racer();
 
 },{"./Racer":61}]},{},[38,99])
 
-//# sourceMappingURL=/derby/auth-ae8a31c0f6eb57fe425940dc4927518e.map.json
+//# sourceMappingURL=/derby/auth-f4b965c9e431ab5e673706f183719532.map.json

@@ -1,12 +1,11 @@
 import derbyApp from './editor';
-import CellController from './Controllers/cell.controller';
 import initializeControllers from '../base/router';
-import loadStyles from '../base/loadStyles';
+import EditorController from './Controllers/editor.controller';
 
 const baseUrl = '/editor';
 
 const controllers = [
-    CellController
+    EditorController
 ];
 
 const expressRouter = initializeControllers(derbyApp, controllers);

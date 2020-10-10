@@ -1,0 +1,14 @@
+<index:>
+    <div
+        tabindex="{{ editing ? -1 : 0 }}"
+        id="cell-{{ id }}"
+        class="cell"
+        style="grid-column: span {{ Math.floor(width * 10) }};"
+        on-keydown="handleKeyDown($event, $element)">
+        <div class="form-control cell-data">
+            {{ data }}<br />
+        </div>
+        <textarea class="form-control cell-editor" disabled="{{ !editing }}">
+            {{ data }}
+        </textarea>
+    </div>

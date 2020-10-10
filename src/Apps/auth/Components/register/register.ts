@@ -5,7 +5,7 @@ class RegisterData {
 }
 
 class RegisterComponent extends Component<RegisterData> {
-    static view = '/home/aananth/dev/NoteD/views/auth/Components/register.html';
+    static view = '/home/aananth/dev/DeNote/views/auth/Components/register.html';
     static DataConstructor = RegisterData;
     static is = 'auth-register';
 

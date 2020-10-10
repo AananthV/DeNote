@@ -5795,7 +5795,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
 
-},{"_process":32,"timers":92}],3:[function(require,module,exports){
+},{"_process":33,"timers":93}],3:[function(require,module,exports){
 /*!
   * Bootstrap v4.5.2 (https://getbootstrap.com/)
   * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -10207,7 +10207,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 })));
 
 
-},{"jquery":25,"popper.js":31}],4:[function(require,module,exports){
+},{"jquery":25,"popper.js":32}],4:[function(require,module,exports){
 (function(){
 var f, aa = aa || {}, l = this;
 function ba(a) {
@@ -14486,7 +14486,7 @@ function swapLastDependency(dependencies, expression, context) {
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
-},{"./operatorFns":9,"./templates":11,"./util":12,"serialize-object":70}],9:[function(require,module,exports){
+},{"./operatorFns":9,"./templates":11,"./util":12,"serialize-object":71}],9:[function(require,module,exports){
 // `-` and `+` can be either unary or binary, so all unary operators are
 // postfixed with `U` to differentiate
 
@@ -15364,7 +15364,7 @@ AsArrayComponent.prototype.comparePosition = function(target, item) {
 };
 AsArrayComponent.prototype.addDestroyListener = AsObjectComponent.prototype.addDestroyListener;
 
-},{"./options":10,"./util":12,"saddle":69,"serialize-object":70}],12:[function(require,module,exports){
+},{"./options":10,"./util":12,"saddle":70,"serialize-object":71}],12:[function(require,module,exports){
 
 exports.concat = function(a, b) {
   if (!a) return b;
@@ -15416,8 +15416,8 @@ function App(derby, name, filename, options) {
   this.derby = derby;
   this.name = name;
   this.filename = filename;
-  this.scriptHash = '98e8f1b6f0690c68dfa56aa47689bc9f';
-  this.bundledAt = 1602257000343;
+  this.scriptHash = '2a47955a397f507a9e46a378da2eb372';
+  this.bundledAt = 1602323954416;
   this.Page = createAppPage(derby);
   this.proto = this.Page.prototype;
   this.views = new templates.Views();
@@ -15752,7 +15752,7 @@ App.prototype._handleMessage = function(action, message) {
   }
 };
 
-},{"./Page":17,"./_views":18,"./components":19,"derby-templates":6,"events":23,"path":30,"racer/lib/util":65,"tracks":94}],14:[function(require,module,exports){
+},{"./Page":17,"./_views":18,"./components":19,"derby-templates":6,"events":23,"path":31,"racer/lib/util":66,"tracks":95}],14:[function(require,module,exports){
 var EventEmitter = require('events').EventEmitter;
 var util = require('racer/lib/util');
 var Dom = require('./Dom');
@@ -15800,7 +15800,7 @@ Controller.prototype.emitDelayable = function() {
   return delayed;
 };
 
-},{"./Dom":16,"events":23,"racer/lib/util":65}],15:[function(require,module,exports){
+},{"./Dom":16,"events":23,"racer/lib/util":66}],15:[function(require,module,exports){
 /*
  * Derby.js
  * Meant to be the entry point for the framework.
@@ -16351,8 +16351,8 @@ function textUpdate(binding, element, previous, pass) {
   binding.template.update(binding.context, binding);
 }
 
-},{"./Controller":14,"./components":19,"./documentListeners":20,"./eventmodel":21,"./textDiff":22,"derby-templates":6,"racer/lib/util":65}],18:[function(require,module,exports){
-/*DERBY_SERIALIZED_VIEWS*/module.exports = function(derbyTemplates, views){var expressions = derbyTemplates.expressions,templates = derbyTemplates.templates;views.deserialize([[function(){return this.template=new templates.Template([new templates.Element('title', void 0, [new templates.Block(new templates.Template([new templates.DynamicText(new expressions.PathExpression(['$render', 'prefix'], new expressions.ExpressionMeta('$render.prefix'))), new templates.Text('Title')], '{{$render.prefix}}Title'), [new templates.DynamicViewInstance(new templates.Template([new templates.DynamicText(new expressions.PathExpression(['$render', 'prefix'], new expressions.ExpressionMeta('$render.prefix'))), new templates.Text('Title')], '{{$render.prefix}}Title'), {})])], void 0, false)])},'TitleElement', '<title><view is="{{$render.prefix}}Title"></view></title>'],[function(){return this.template=new templates.Template([new templates.Element('body', {'class': new templates.DynamicAttribute(new expressions.FnExpression(['$bodyClass'], [new expressions.PathExpression(['$render', 'ns'])], void 0, new expressions.ExpressionMeta('$bodyClass($render.ns)')))}, [new templates.Block(new templates.Template([new templates.DynamicText(new expressions.PathExpression(['$render', 'prefix'], new expressions.ExpressionMeta('$render.prefix'))), new templates.Text('Body')], '{{$render.prefix}}Body'), [new templates.DynamicViewInstance(new templates.Template([new templates.DynamicText(new expressions.PathExpression(['$render', 'prefix'], new expressions.ExpressionMeta('$render.prefix'))), new templates.Text('Body')], '{{$render.prefix}}Body'), {})])], void 0, false, true)])},'BodyElement', '<body class="{{$bodyClass($render.ns)}}"><view is="{{$render.prefix}}Body"></view>'],[function(){return this.template=new templates.Template([new templates.Text('Editor')])},'Title', '\n    Editor\n\n'],[function(){return this.template=new templates.Template([new templates.Element('script', {'src': new templates.Attribute('https://kit.fontawesome.com/f5b352626b.js'), 'crossorigin': new templates.Attribute('anonymous')}, [], void 0, false)])},'Head', '\n    <script src="https://kit.fontawesome.com/f5b352626b.js" crossorigin="anonymous"></script>\n\n'],[function(){return this.template=new templates.Template([new templates.Block(new expressions.PathExpression(['$render', 'ns'], new expressions.ExpressionMeta('$render.ns')), [new templates.DynamicViewInstance(new expressions.PathExpression(['$render', 'ns'], new expressions.ExpressionMeta('$render.ns')), {})])])},'Body', '\n    <!-- <nav>\n        {{each navItems($render.ns) as #item}}\n        {{if #item.isCurrent}}\n            <b>{{#item.title}}</b>\n        {{else}}\n            <a href={{#item.href}}>{{#item.title}}</a>\n        {{/if}}\n        {{unless #item.isLast}} | {{/unless}}\n        {{/each}}\n        <hr>\n    </nav> -->\n    <view is="{{$render.ns}}"></view>\n'],[function(){return this.template=new templates.Template([])},'Tail', ''],[function(){return this.template=new templates.Template([new templates.Marker('editor-cell:index'), new templates.Element('div', {'tabindex': new templates.DynamicAttribute(new expressions.OperatorExpression('?', [new expressions.PathExpression(['editing']), new expressions.LiteralExpression(-1), new expressions.LiteralExpression(0)], void 0, new expressions.ExpressionMeta('editing ? -1 : 0'))), 'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('cell-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'cell-{{ id }}')), 'class': new templates.Attribute('cell-container'), 'style': new templates.DynamicAttribute(new templates.Template([new templates.Text('grid-column: span '), new templates.DynamicText(new expressions.FnExpression(['Math', 'floor'], [new expressions.OperatorExpression('*', [new expressions.AttributePathExpression('cell', ['width']), new expressions.LiteralExpression(10)])], void 0, new expressions.ExpressionMeta('Math.floor(@cell.width * 10)'))), new templates.Text(';')], 'grid-column: span {{ Math.floor(@cell.width * 10) }};'))}, [new templates.Element('div', {'class': new templates.Attribute('form-control cell-data')}, [new templates.DynamicText(new expressions.AttributePathExpression('cell', ['data'], new expressions.ExpressionMeta('@cell.data'))), new templates.Element('br', void 0, null, void 0, true)], void 0, false), new templates.Element('textarea', {'class': new templates.Attribute('form-control cell'), 'disabled': new templates.DynamicAttribute(new expressions.OperatorExpression('!U', [new expressions.PathExpression(['editing'])], void 0, new expressions.ExpressionMeta('!editing')))}, [new templates.DynamicText(new expressions.AttributePathExpression('cell', ['data'], new expressions.ExpressionMeta('@cell.data')))], void 0, false)], [new templates.ElementOn('keydown', new expressions.FnExpression(['handleKeyDown'], [new expressions.PathExpression(['$event']), new expressions.PathExpression(['$element']), new expressions.AttributePathExpression('index', [])]))], false)])},'editor-cell:index', '\n<div\n    tabindex="{{ editing ? -1 : 0 }}"\n    id="cell-{{ id }}"\n    class="cell-container"\n    style="grid-column: span {{ Math.floor(@cell.width * 10) }};"\n    on-keydown="handleKeyDown($event, $element, @index)">\n    <div class="form-control cell-data">\n        {{ @cell.data }}<br />\n    </div>\n    <textarea class="form-control cell" disabled="{{ !editing }}">\n        {{ @cell.data }}\n    </textarea>\n</div>\n\n', {'tag': 'editor-cell'}],[function(){return this.template=new templates.Template([new templates.Marker('editor-section:index'), new templates.Element('div', {'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('section-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'section-{{ id }}')), 'class': new templates.Attribute('section'), 'style': new templates.DynamicAttribute(new templates.Template([new templates.Text('grid-template-columns: repeat('), new templates.DynamicText(new expressions.OperatorExpression('-', [new expressions.OperatorExpression('*', [new expressions.PathExpression(['cells', 'length']), new expressions.LiteralExpression(11)]), new expressions.LiteralExpression(1)], void 0, new expressions.ExpressionMeta('cells.length * 11 - 1'))), new templates.Text(', 1fr);')], 'grid-template-columns: repeat({{ cells.length * 11 - 1 }}, 1fr);'))}, [new templates.EachBlock(new expressions.PathExpression(['cells'], new expressions.ExpressionMeta('each cells as #cell, #i', 'each', void 0, '#cell', '#i')), [new templates.ViewInstance('editor-cell', {'cell': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#cell', [], new expressions.ExpressionMeta('#cell'))), 'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))}), new templates.ConditionalBlock([new expressions.OperatorExpression('!==', [new expressions.OperatorExpression('+', [new expressions.AliasPathExpression('#i', []), new expressions.LiteralExpression(1)]), new expressions.PathExpression(['cells', 'length'])], void 0, new expressions.ExpressionMeta('if #i + 1 !== cells.length', 'if'))], [[new templates.ViewInstance('editor-section:section-adjust', {'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))})]])])], [new templates.AsProperty(['section'])], false)])},'editor-section:index', '\n    <div id="section-{{ id }}" as="section" class="section" style="grid-template-columns: repeat({{ cells.length * 11 - 1 }}, 1fr);">\n        {{ each cells as #cell, #i }}\n            <view is="editor-cell" cell="{{ #cell }}" index="{{ #i }}"/>\n            {{ if #i + 1 !== cells.length }}\n                <view is="section-adjust" index="{{ #i }}"/>\n            {{ /if }}\n        {{ /each }}\n    </div>\n\n'],[function(){return this.template=new templates.Template([new templates.Element('div', {'class': new templates.Attribute('section-adjust')}, [new templates.Element('i', {'class': new templates.Attribute('fas fa-exchange-alt')}, [], [new templates.ElementOn('click', new expressions.FnExpression(['swap'], [new expressions.PathExpression(['$event']), new expressions.AttributePathExpression('index', []), new expressions.OperatorExpression('+', [new expressions.AttributePathExpression('index', []), new expressions.LiteralExpression(1)])]))], false)], [new templates.ElementOn('mousedown', new expressions.FnExpression(['resizeStart'], [new expressions.PathExpression(['$event']), new expressions.AttributePathExpression('index', [])]))], false)])},'editor-section:section-adjust', '\n    <div class="section-adjust" on-mousedown="resizeStart($event, @index)">\n        <i class="fas fa-exchange-alt" on-click="swap($event, @index, @index + 1)"></i>\n    </div>\n'],[function(){return this.template=new templates.Template([new templates.Element('div', {'tabindex': new templates.DynamicAttribute(new expressions.OperatorExpression('?', [new expressions.PathExpression(['editing']), new expressions.LiteralExpression(-1), new expressions.LiteralExpression(0)], void 0, new expressions.ExpressionMeta('editing ? -1 : 0'))), 'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('cell-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'cell-{{ id }}')), 'class': new templates.Attribute('cell-container'), 'style': new templates.DynamicAttribute(new templates.Template([new templates.Text('grid-column: span '), new templates.DynamicText(new expressions.FnExpression(['Math', 'floor'], [new expressions.OperatorExpression('*', [new expressions.AttributePathExpression('cell', ['width']), new expressions.LiteralExpression(10)])], void 0, new expressions.ExpressionMeta('Math.floor(@cell.width * 10)'))), new templates.Text(';')], 'grid-column: span {{ Math.floor(@cell.width * 10) }};'))}, [new templates.Element('div', {'class': new templates.Attribute('form-control cell-data')}, [new templates.DynamicText(new expressions.AttributePathExpression('cell', ['data'], new expressions.ExpressionMeta('@cell.data'))), new templates.Element('br', void 0, null, void 0, true)], void 0, false), new templates.Element('textarea', {'class': new templates.Attribute('form-control cell'), 'disabled': new templates.DynamicAttribute(new expressions.OperatorExpression('!U', [new expressions.PathExpression(['editing'])], void 0, new expressions.ExpressionMeta('!editing')))}, [new templates.DynamicText(new expressions.AttributePathExpression('cell', ['data'], new expressions.ExpressionMeta('@cell.data')))], void 0, false)], [new templates.ElementOn('keydown', new expressions.FnExpression(['handleKeyDown'], [new expressions.PathExpression(['$event']), new expressions.PathExpression(['$element']), new expressions.AttributePathExpression('index', [])]))], false)])},'cell:index', '\n<div\n    tabindex="{{ editing ? -1 : 0 }}"\n    id="cell-{{ id }}"\n    class="cell-container"\n    style="grid-column: span {{ Math.floor(@cell.width * 10) }};"\n    on-keydown="handleKeyDown($event, $element, @index)">\n    <div class="form-control cell-data">\n        {{ @cell.data }}<br />\n    </div>\n    <textarea class="form-control cell" disabled="{{ !editing }}">\n        {{ @cell.data }}\n    </textarea>\n</div>\n\n', {'tag': 'editor-cell'}],[function(){return this.template=new templates.Template([new templates.Element('div', {'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('section-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'section-{{ id }}')), 'class': new templates.Attribute('section'), 'style': new templates.DynamicAttribute(new templates.Template([new templates.Text('grid-template-columns: repeat('), new templates.DynamicText(new expressions.OperatorExpression('-', [new expressions.OperatorExpression('*', [new expressions.PathExpression(['cells', 'length']), new expressions.LiteralExpression(11)]), new expressions.LiteralExpression(1)], void 0, new expressions.ExpressionMeta('cells.length * 11 - 1'))), new templates.Text(', 1fr);')], 'grid-template-columns: repeat({{ cells.length * 11 - 1 }}, 1fr);'))}, [new templates.EachBlock(new expressions.PathExpression(['cells'], new expressions.ExpressionMeta('each cells as #cell, #i', 'each', void 0, '#cell', '#i')), [new templates.ViewInstance('editor-cell', {'cell': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#cell', [], new expressions.ExpressionMeta('#cell'))), 'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))}), new templates.ConditionalBlock([new expressions.OperatorExpression('!==', [new expressions.OperatorExpression('+', [new expressions.AliasPathExpression('#i', []), new expressions.LiteralExpression(1)]), new expressions.PathExpression(['cells', 'length'])], void 0, new expressions.ExpressionMeta('if #i + 1 !== cells.length', 'if'))], [[new templates.ViewInstance('section:section-adjust', {'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))})]])])], [new templates.AsProperty(['section'])], false)])},'section:index', '\n    <div id="section-{{ id }}" as="section" class="section" style="grid-template-columns: repeat({{ cells.length * 11 - 1 }}, 1fr);">\n        {{ each cells as #cell, #i }}\n            <view is="editor-cell" cell="{{ #cell }}" index="{{ #i }}"/>\n            {{ if #i + 1 !== cells.length }}\n                <view is="section-adjust" index="{{ #i }}"/>\n            {{ /if }}\n        {{ /each }}\n    </div>\n\n'],[function(){return this.template=new templates.Template([new templates.Element('div', {'class': new templates.Attribute('section-adjust')}, [new templates.Element('i', {'class': new templates.Attribute('fas fa-exchange-alt')}, [], [new templates.ElementOn('click', new expressions.FnExpression(['swap'], [new expressions.PathExpression(['$event']), new expressions.AttributePathExpression('index', []), new expressions.OperatorExpression('+', [new expressions.AttributePathExpression('index', []), new expressions.LiteralExpression(1)])]))], false)], [new templates.ElementOn('mousedown', new expressions.FnExpression(['resizeStart'], [new expressions.PathExpression(['$event']), new expressions.AttributePathExpression('index', [])]))], false)])},'section:section-adjust', '\n    <div class="section-adjust" on-mousedown="resizeStart($event, @index)">\n        <i class="fas fa-exchange-alt" on-click="swap($event, @index, @index + 1)"></i>\n    </div>\n']])};/*DERBY_SERIALIZED_VIEWS_END*/
+},{"./Controller":14,"./components":19,"./documentListeners":20,"./eventmodel":21,"./textDiff":22,"derby-templates":6,"racer/lib/util":66}],18:[function(require,module,exports){
+/*DERBY_SERIALIZED_VIEWS*/module.exports = function(derbyTemplates, views){var expressions = derbyTemplates.expressions,templates = derbyTemplates.templates;views.deserialize([[function(){return this.template=new templates.Template([new templates.Element('title', void 0, [new templates.Block(new templates.Template([new templates.DynamicText(new expressions.PathExpression(['$render', 'prefix'], new expressions.ExpressionMeta('$render.prefix'))), new templates.Text('Title')], '{{$render.prefix}}Title'), [new templates.DynamicViewInstance(new templates.Template([new templates.DynamicText(new expressions.PathExpression(['$render', 'prefix'], new expressions.ExpressionMeta('$render.prefix'))), new templates.Text('Title')], '{{$render.prefix}}Title'), {})])], void 0, false)])},'TitleElement', '<title><view is="{{$render.prefix}}Title"></view></title>'],[function(){return this.template=new templates.Template([new templates.Element('body', {'class': new templates.DynamicAttribute(new expressions.FnExpression(['$bodyClass'], [new expressions.PathExpression(['$render', 'ns'])], void 0, new expressions.ExpressionMeta('$bodyClass($render.ns)')))}, [new templates.Block(new templates.Template([new templates.DynamicText(new expressions.PathExpression(['$render', 'prefix'], new expressions.ExpressionMeta('$render.prefix'))), new templates.Text('Body')], '{{$render.prefix}}Body'), [new templates.DynamicViewInstance(new templates.Template([new templates.DynamicText(new expressions.PathExpression(['$render', 'prefix'], new expressions.ExpressionMeta('$render.prefix'))), new templates.Text('Body')], '{{$render.prefix}}Body'), {})])], void 0, false, true)])},'BodyElement', '<body class="{{$bodyClass($render.ns)}}"><view is="{{$render.prefix}}Body"></view>'],[function(){return this.template=new templates.Template([new templates.Text('Editor')])},'Title', '\n    Editor\n\n'],[function(){return this.template=new templates.Template([new templates.Element('script', {'src': new templates.Attribute('https://kit.fontawesome.com/f5b352626b.js'), 'crossorigin': new templates.Attribute('anonymous')}, [], void 0, false)])},'Head', '\n    <script src="https://kit.fontawesome.com/f5b352626b.js" crossorigin="anonymous"></script>\n\n'],[function(){return this.template=new templates.Template([new templates.Block(new expressions.PathExpression(['$render', 'ns'], new expressions.ExpressionMeta('$render.ns')), [new templates.DynamicViewInstance(new expressions.PathExpression(['$render', 'ns'], new expressions.ExpressionMeta('$render.ns')), {})])])},'Body', '\n    <!-- <nav>\n        {{each navItems($render.ns) as #item}}\n        {{if #item.isCurrent}}\n            <b>{{#item.title}}</b>\n        {{else}}\n            <a href={{#item.href}}>{{#item.title}}</a>\n        {{/if}}\n        {{unless #item.isLast}} | {{/unless}}\n        {{/each}}\n        <hr>\n    </nav> -->\n    <view is="{{$render.ns}}"></view>\n'],[function(){return this.template=new templates.Template([])},'Tail', ''],[function(){return this.template=new templates.Template([new templates.Marker('editor:edit-cell:index'), new templates.Element('div', {'tabindex': new templates.DynamicAttribute(new expressions.OperatorExpression('?', [new expressions.PathExpression(['editing']), new expressions.LiteralExpression(-1), new expressions.LiteralExpression(0)], void 0, new expressions.ExpressionMeta('editing ? -1 : 0'))), 'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('cell-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'cell-{{ id }}')), 'class': new templates.Attribute('cell'), 'style': new templates.DynamicAttribute(new templates.Template([new templates.Text('grid-column: span '), new templates.DynamicText(new expressions.FnExpression(['Math', 'floor'], [new expressions.OperatorExpression('*', [new expressions.PathExpression(['width']), new expressions.LiteralExpression(10)])], void 0, new expressions.ExpressionMeta('Math.floor(width * 10)'))), new templates.Text(';')], 'grid-column: span {{ Math.floor(width * 10) }};'))}, [new templates.Element('div', {'class': new templates.Attribute('form-control cell-data')}, [new templates.DynamicText(new expressions.PathExpression(['data'], new expressions.ExpressionMeta('data'))), new templates.Element('br', void 0, null, void 0, true)], void 0, false), new templates.Element('textarea', {'class': new templates.Attribute('form-control cell-editor'), 'disabled': new templates.DynamicAttribute(new expressions.OperatorExpression('!U', [new expressions.PathExpression(['editing'])], void 0, new expressions.ExpressionMeta('!editing')))}, [new templates.DynamicText(new expressions.PathExpression(['data'], new expressions.ExpressionMeta('data')))], void 0, false)], [new templates.ElementOn('keydown', new expressions.FnExpression(['handleKeyDown'], [new expressions.PathExpression(['$event']), new expressions.PathExpression(['$element'])]))], false)])},'editor:edit-cell:index', '\n    <div\n        tabindex="{{ editing ? -1 : 0 }}"\n        id="cell-{{ id }}"\n        class="cell"\n        style="grid-column: span {{ Math.floor(width * 10) }};"\n        on-keydown="handleKeyDown($event, $element)">\n        <div class="form-control cell-data">\n            {{ data }}<br />\n        </div>\n        <textarea class="form-control cell-editor" disabled="{{ !editing }}">\n            {{ data }}\n        </textarea>\n    </div>\n\n'],[function(){return this.template=new templates.Template([new templates.Marker('editor:edit-section:index'), new templates.Element('div', {'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('section-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'section-{{ id }}')), 'class': new templates.Attribute('section'), 'style': new templates.DynamicAttribute(new templates.Template([new templates.Text('grid-template-columns: repeat('), new templates.DynamicText(new expressions.OperatorExpression('-', [new expressions.OperatorExpression('*', [new expressions.PathExpression(['cells', 'length']), new expressions.LiteralExpression(11)]), new expressions.LiteralExpression(1)], void 0, new expressions.ExpressionMeta('cells.length * 11 - 1'))), new templates.Text(', 1fr);')], 'grid-template-columns: repeat({{ cells.length * 11 - 1 }}, 1fr);'))}, [new templates.EachBlock(new expressions.PathExpression(['cells'], new expressions.ExpressionMeta('each cells as #cell, #i', 'each', void 0, '#cell', '#i')), [new templates.ViewInstance('editor:edit-cell', {'cell': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#cell', [], new expressions.ExpressionMeta('#cell'))), 'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))}), new templates.ConditionalBlock([new expressions.OperatorExpression('!==', [new expressions.OperatorExpression('+', [new expressions.AliasPathExpression('#i', []), new expressions.LiteralExpression(1)]), new expressions.PathExpression(['cells', 'length'])], void 0, new expressions.ExpressionMeta('if #i + 1 !== cells.length', 'if'))], [[new templates.ViewInstance('editor:edit-section:section-adjust', {'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))})]])])], void 0, false)])},'editor:edit-section:index', '\n    <div id="section-{{ id }}" class="section" style="grid-template-columns: repeat({{ cells.length * 11 - 1 }}, 1fr);">\n        {{ each cells as #cell, #i }}\n            <view is="editor:edit-cell" cell="{{ #cell }}" index="{{ #i }}"/>\n            {{ if #i + 1 !== cells.length }}\n                <view is="section-adjust" index="{{ #i }}"/>\n            {{ /if }}\n        {{ /each }}\n    </div>\n\n'],[function(){return this.template=new templates.Template([new templates.Element('div', {'class': new templates.Attribute('section-adjust')}, [], [new templates.ElementOn('mousedown', new expressions.FnExpression(['resizeStart'], [new expressions.PathExpression(['$event']), new expressions.AttributePathExpression('index', [])]))], false)])},'editor:edit-section:section-adjust', '\n    <div class="section-adjust" on-mousedown="resizeStart($event, @index)">\n        <!-- <i class="fas fa-exchange-alt" on-click="swap($event, @index, @index + 1)"></i> -->\n    </div>\n'],[function(){return this.template=new templates.Template([new templates.Marker('editor:edit-note:index'), new templates.Element('div', {'class': new templates.Attribute('edit')}, [new templates.Element('div', {'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('note-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'note-{{ id }}')), 'class': new templates.Attribute('note')}, [new templates.EachBlock(new expressions.PathExpression(['sections'], new expressions.ExpressionMeta('each sections as #section, #i', 'each', void 0, '#section', '#i')), [new templates.ViewInstance('editor:edit-section', {'section': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#section', [], new expressions.ExpressionMeta('#section'))), 'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))}), new templates.Element('hr', void 0, null, void 0, false)])], void 0, false)], void 0, false)])},'editor:edit-note:index', '\n    <div class="edit">\n        <div id="note-{{ id }}" class="note">\n            {{ each sections as #section, #i }}\n                <view is="editor:edit-section" section="{{ #section }}" index="{{ #i }}"/>\n                <hr>\n            {{ /each }}\n        </div>\n    </div>\n'],[function(){return this.template=new templates.Template([new templates.Marker('editor:render-cell:index'), new templates.Element('div', {'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('cell-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'cell-{{ id }}')), 'class': new templates.Attribute('cell'), 'style': new templates.DynamicAttribute(new templates.Template([new templates.Text('grid-column: span '), new templates.DynamicText(new expressions.FnExpression(['Math', 'floor'], [new expressions.OperatorExpression('*', [new expressions.PathExpression(['width']), new expressions.LiteralExpression(10)])], void 0, new expressions.ExpressionMeta('Math.floor(width * 10)'))), new templates.Text(';')], 'grid-column: span {{ Math.floor(width * 10) }};'))}, [new templates.Element('div', {'class': new templates.Attribute('cell-data')}, [new templates.DynamicHtml(new expressions.PathExpression(['markdownData'], new expressions.ExpressionMeta('unescaped markdownData', void 0, void 0, void 0, void 0, true)))], void 0, false)], void 0, false)])},'editor:render-cell:index', '\n    <div\n        id="cell-{{ id }}"\n        class="cell"\n        style="grid-column: span {{ Math.floor(width * 10) }};">\n        <div class="cell-data">\n            {{ unescaped markdownData }}\n        </div>\n    </div>\n\n'],[function(){return this.template=new templates.Template([new templates.Marker('editor:render-section:index'), new templates.Element('div', {'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('section-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'section-{{ id }}')), 'class': new templates.Attribute('section'), 'style': new templates.DynamicAttribute(new templates.Template([new templates.Text('grid-template-columns: repeat('), new templates.DynamicText(new expressions.OperatorExpression('*', [new expressions.PathExpression(['cells', 'length']), new expressions.LiteralExpression(10)], void 0, new expressions.ExpressionMeta('cells.length * 10'))), new templates.Text(', 1fr);')], 'grid-template-columns: repeat({{ cells.length * 10 }}, 1fr);'))}, [new templates.EachBlock(new expressions.PathExpression(['cells'], new expressions.ExpressionMeta('each cells as #cell, #i', 'each', void 0, '#cell', '#i')), [new templates.ViewInstance('editor:render-cell', {'cell': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#cell', [], new expressions.ExpressionMeta('#cell'))), 'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))})])], void 0, false)])},'editor:render-section:index', '\n    <div id="section-{{ id }}" class="section" style="grid-template-columns: repeat({{ cells.length * 10 }}, 1fr);">\n        {{ each cells as #cell, #i }}\n            <view is="editor:render-cell" cell="{{ #cell }}" index="{{ #i }}"/>\n            <!-- {{ if #i + 1 !== cells.length }}\n                <view is="section-adjust" index="{{ #i }}"/>\n            {{ /if }} -->\n        {{ /each }}\n    </div>\n'],[function(){return this.template=new templates.Template([new templates.Marker('editor:render-note:index'), new templates.Element('div', {'class': new templates.Attribute('render')}, [new templates.Element('div', {'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('note-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'note-{{ id }}')), 'class': new templates.Attribute('note')}, [new templates.EachBlock(new expressions.PathExpression(['sections'], new expressions.ExpressionMeta('each sections as #section, #i', 'each', void 0, '#section', '#i')), [new templates.ViewInstance('editor:render-section', {'section': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#section', [], new expressions.ExpressionMeta('#section'))), 'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))}), new templates.Element('hr', void 0, null, void 0, false)])], void 0, false)], void 0, false)])},'editor:render-note:index', '\n    <div class="render">\n        <div id="note-{{ id }}" class="note">\n            {{ each sections as #section, #i }}\n                <view is="editor:render-section" section="{{ #section }}" index="{{ #i }}"/>\n                <hr>\n            {{ /each }}\n        </div>\n    </div>\n'],[function(){return this.template=new templates.Template([new templates.Element('div', {'tabindex': new templates.DynamicAttribute(new expressions.OperatorExpression('?', [new expressions.PathExpression(['editing']), new expressions.LiteralExpression(-1), new expressions.LiteralExpression(0)], void 0, new expressions.ExpressionMeta('editing ? -1 : 0'))), 'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('cell-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'cell-{{ id }}')), 'class': new templates.Attribute('cell'), 'style': new templates.DynamicAttribute(new templates.Template([new templates.Text('grid-column: span '), new templates.DynamicText(new expressions.FnExpression(['Math', 'floor'], [new expressions.OperatorExpression('*', [new expressions.PathExpression(['width']), new expressions.LiteralExpression(10)])], void 0, new expressions.ExpressionMeta('Math.floor(width * 10)'))), new templates.Text(';')], 'grid-column: span {{ Math.floor(width * 10) }};'))}, [new templates.Element('div', {'class': new templates.Attribute('form-control cell-data')}, [new templates.DynamicText(new expressions.PathExpression(['data'], new expressions.ExpressionMeta('data'))), new templates.Element('br', void 0, null, void 0, true)], void 0, false), new templates.Element('textarea', {'class': new templates.Attribute('form-control cell-editor'), 'disabled': new templates.DynamicAttribute(new expressions.OperatorExpression('!U', [new expressions.PathExpression(['editing'])], void 0, new expressions.ExpressionMeta('!editing')))}, [new templates.DynamicText(new expressions.PathExpression(['data'], new expressions.ExpressionMeta('data')))], void 0, false)], [new templates.ElementOn('keydown', new expressions.FnExpression(['handleKeyDown'], [new expressions.PathExpression(['$event']), new expressions.PathExpression(['$element'])]))], false)])},'editCell:index', '\n    <div\n        tabindex="{{ editing ? -1 : 0 }}"\n        id="cell-{{ id }}"\n        class="cell"\n        style="grid-column: span {{ Math.floor(width * 10) }};"\n        on-keydown="handleKeyDown($event, $element)">\n        <div class="form-control cell-data">\n            {{ data }}<br />\n        </div>\n        <textarea class="form-control cell-editor" disabled="{{ !editing }}">\n            {{ data }}\n        </textarea>\n    </div>\n\n'],[function(){return this.template=new templates.Template([new templates.Element('div', {'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('section-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'section-{{ id }}')), 'class': new templates.Attribute('section'), 'style': new templates.DynamicAttribute(new templates.Template([new templates.Text('grid-template-columns: repeat('), new templates.DynamicText(new expressions.OperatorExpression('-', [new expressions.OperatorExpression('*', [new expressions.PathExpression(['cells', 'length']), new expressions.LiteralExpression(11)]), new expressions.LiteralExpression(1)], void 0, new expressions.ExpressionMeta('cells.length * 11 - 1'))), new templates.Text(', 1fr);')], 'grid-template-columns: repeat({{ cells.length * 11 - 1 }}, 1fr);'))}, [new templates.EachBlock(new expressions.PathExpression(['cells'], new expressions.ExpressionMeta('each cells as #cell, #i', 'each', void 0, '#cell', '#i')), [new templates.ViewInstance('editor:edit-cell', {'cell': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#cell', [], new expressions.ExpressionMeta('#cell'))), 'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))}), new templates.ConditionalBlock([new expressions.OperatorExpression('!==', [new expressions.OperatorExpression('+', [new expressions.AliasPathExpression('#i', []), new expressions.LiteralExpression(1)]), new expressions.PathExpression(['cells', 'length'])], void 0, new expressions.ExpressionMeta('if #i + 1 !== cells.length', 'if'))], [[new templates.ViewInstance('editSection:section-adjust', {'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))})]])])], void 0, false)])},'editSection:index', '\n    <div id="section-{{ id }}" class="section" style="grid-template-columns: repeat({{ cells.length * 11 - 1 }}, 1fr);">\n        {{ each cells as #cell, #i }}\n            <view is="editor:edit-cell" cell="{{ #cell }}" index="{{ #i }}"/>\n            {{ if #i + 1 !== cells.length }}\n                <view is="section-adjust" index="{{ #i }}"/>\n            {{ /if }}\n        {{ /each }}\n    </div>\n\n'],[function(){return this.template=new templates.Template([new templates.Element('div', {'class': new templates.Attribute('section-adjust')}, [], [new templates.ElementOn('mousedown', new expressions.FnExpression(['resizeStart'], [new expressions.PathExpression(['$event']), new expressions.AttributePathExpression('index', [])]))], false)])},'editSection:section-adjust', '\n    <div class="section-adjust" on-mousedown="resizeStart($event, @index)">\n        <!-- <i class="fas fa-exchange-alt" on-click="swap($event, @index, @index + 1)"></i> -->\n    </div>\n'],[function(){return this.template=new templates.Template([new templates.Element('div', {'class': new templates.Attribute('edit')}, [new templates.Element('div', {'id': new templates.DynamicAttribute(new templates.Template([new templates.Text('note-'), new templates.DynamicText(new expressions.PathExpression(['id'], new expressions.ExpressionMeta('id')))], 'note-{{ id }}')), 'class': new templates.Attribute('note')}, [new templates.EachBlock(new expressions.PathExpression(['sections'], new expressions.ExpressionMeta('each sections as #section, #i', 'each', void 0, '#section', '#i')), [new templates.ViewInstance('editor:edit-section', {'section': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#section', [], new expressions.ExpressionMeta('#section'))), 'index': new expressions.ViewParentExpression(new expressions.AliasPathExpression('#i', [], new expressions.ExpressionMeta('#i')))}), new templates.Element('hr', void 0, null, void 0, false)])], void 0, false)], void 0, false)])},'editNote:index', '\n    <div class="edit">\n        <div id="note-{{ id }}" class="note">\n            {{ each sections as #section, #i }}\n                <view is="editor:edit-section" section="{{ #section }}" index="{{ #i }}"/>\n                <hr>\n            {{ /each }}\n        </div>\n    </div>\n']])};/*DERBY_SERIALIZED_VIEWS_END*/
 },{}],19:[function(require,module,exports){
 /*
  * components.js
@@ -16830,7 +16830,7 @@ function extendComponent(constructor) {
   _extendComponent(constructor);
 }
 
-},{"./Controller":14,"derby-templates":6,"racer/lib/util":65}],20:[function(require,module,exports){
+},{"./Controller":14,"derby-templates":6,"racer/lib/util":66}],20:[function(require,module,exports){
 var textDiff = require('./textDiff');
 
 exports.add = addDocumentListeners;
@@ -29041,6 +29041,2686 @@ return jQuery;
 } );
 
 },{}],26:[function(require,module,exports){
+/**
+ * marked - a markdown parser
+ * Copyright (c) 2011-2020, Christopher Jeffrey. (MIT Licensed)
+ * https://github.com/markedjs/marked
+ */
+
+/**
+ * DO NOT EDIT THIS FILE
+ * The code in this file is generated from files in ./src/
+ */
+
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = global || self, global.marked = factory());
+}(this, (function () { 'use strict';
+
+  function _defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+  }
+
+  function _unsupportedIterableToArray(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(o);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+  }
+
+  function _arrayLikeToArray(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+
+    for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+    return arr2;
+  }
+
+  function _createForOfIteratorHelperLoose(o, allowArrayLike) {
+    var it;
+
+    if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
+      if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
+        if (it) o = it;
+        var i = 0;
+        return function () {
+          if (i >= o.length) return {
+            done: true
+          };
+          return {
+            done: false,
+            value: o[i++]
+          };
+        };
+      }
+
+      throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+    }
+
+    it = o[Symbol.iterator]();
+    return it.next.bind(it);
+  }
+
+  function createCommonjsModule(fn, module) {
+  	return module = { exports: {} }, fn(module, module.exports), module.exports;
+  }
+
+  var defaults = createCommonjsModule(function (module) {
+    function getDefaults() {
+      return {
+        baseUrl: null,
+        breaks: false,
+        gfm: true,
+        headerIds: true,
+        headerPrefix: '',
+        highlight: null,
+        langPrefix: 'language-',
+        mangle: true,
+        pedantic: false,
+        renderer: null,
+        sanitize: false,
+        sanitizer: null,
+        silent: false,
+        smartLists: false,
+        smartypants: false,
+        tokenizer: null,
+        walkTokens: null,
+        xhtml: false
+      };
+    }
+
+    function changeDefaults(newDefaults) {
+      module.exports.defaults = newDefaults;
+    }
+
+    module.exports = {
+      defaults: getDefaults(),
+      getDefaults: getDefaults,
+      changeDefaults: changeDefaults
+    };
+  });
+  var defaults_1 = defaults.defaults;
+  var defaults_2 = defaults.getDefaults;
+  var defaults_3 = defaults.changeDefaults;
+
+  /**
+   * Helpers
+   */
+  var escapeTest = /[&<>"']/;
+  var escapeReplace = /[&<>"']/g;
+  var escapeTestNoEncode = /[<>"']|&(?!#?\w+;)/;
+  var escapeReplaceNoEncode = /[<>"']|&(?!#?\w+;)/g;
+  var escapeReplacements = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  };
+
+  var getEscapeReplacement = function getEscapeReplacement(ch) {
+    return escapeReplacements[ch];
+  };
+
+  function escape(html, encode) {
+    if (encode) {
+      if (escapeTest.test(html)) {
+        return html.replace(escapeReplace, getEscapeReplacement);
+      }
+    } else {
+      if (escapeTestNoEncode.test(html)) {
+        return html.replace(escapeReplaceNoEncode, getEscapeReplacement);
+      }
+    }
+
+    return html;
+  }
+
+  var unescapeTest = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig;
+
+  function unescape(html) {
+    // explicitly match decimal, hex, and named HTML entities
+    return html.replace(unescapeTest, function (_, n) {
+      n = n.toLowerCase();
+      if (n === 'colon') return ':';
+
+      if (n.charAt(0) === '#') {
+        return n.charAt(1) === 'x' ? String.fromCharCode(parseInt(n.substring(2), 16)) : String.fromCharCode(+n.substring(1));
+      }
+
+      return '';
+    });
+  }
+
+  var caret = /(^|[^\[])\^/g;
+
+  function edit(regex, opt) {
+    regex = regex.source || regex;
+    opt = opt || '';
+    var obj = {
+      replace: function replace(name, val) {
+        val = val.source || val;
+        val = val.replace(caret, '$1');
+        regex = regex.replace(name, val);
+        return obj;
+      },
+      getRegex: function getRegex() {
+        return new RegExp(regex, opt);
+      }
+    };
+    return obj;
+  }
+
+  var nonWordAndColonTest = /[^\w:]/g;
+  var originIndependentUrl = /^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;
+
+  function cleanUrl(sanitize, base, href) {
+    if (sanitize) {
+      var prot;
+
+      try {
+        prot = decodeURIComponent(unescape(href)).replace(nonWordAndColonTest, '').toLowerCase();
+      } catch (e) {
+        return null;
+      }
+
+      if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0 || prot.indexOf('data:') === 0) {
+        return null;
+      }
+    }
+
+    if (base && !originIndependentUrl.test(href)) {
+      href = resolveUrl(base, href);
+    }
+
+    try {
+      href = encodeURI(href).replace(/%25/g, '%');
+    } catch (e) {
+      return null;
+    }
+
+    return href;
+  }
+
+  var baseUrls = {};
+  var justDomain = /^[^:]+:\/*[^/]*$/;
+  var protocol = /^([^:]+:)[\s\S]*$/;
+  var domain = /^([^:]+:\/*[^/]*)[\s\S]*$/;
+
+  function resolveUrl(base, href) {
+    if (!baseUrls[' ' + base]) {
+      // we can ignore everything in base after the last slash of its path component,
+      // but we might need to add _that_
+      // https://tools.ietf.org/html/rfc3986#section-3
+      if (justDomain.test(base)) {
+        baseUrls[' ' + base] = base + '/';
+      } else {
+        baseUrls[' ' + base] = rtrim(base, '/', true);
+      }
+    }
+
+    base = baseUrls[' ' + base];
+    var relativeBase = base.indexOf(':') === -1;
+
+    if (href.substring(0, 2) === '//') {
+      if (relativeBase) {
+        return href;
+      }
+
+      return base.replace(protocol, '$1') + href;
+    } else if (href.charAt(0) === '/') {
+      if (relativeBase) {
+        return href;
+      }
+
+      return base.replace(domain, '$1') + href;
+    } else {
+      return base + href;
+    }
+  }
+
+  var noopTest = {
+    exec: function noopTest() {}
+  };
+
+  function merge(obj) {
+    var i = 1,
+        target,
+        key;
+
+    for (; i < arguments.length; i++) {
+      target = arguments[i];
+
+      for (key in target) {
+        if (Object.prototype.hasOwnProperty.call(target, key)) {
+          obj[key] = target[key];
+        }
+      }
+    }
+
+    return obj;
+  }
+
+  function splitCells(tableRow, count) {
+    // ensure that every cell-delimiting pipe has a space
+    // before it to distinguish it from an escaped pipe
+    var row = tableRow.replace(/\|/g, function (match, offset, str) {
+      var escaped = false,
+          curr = offset;
+
+      while (--curr >= 0 && str[curr] === '\\') {
+        escaped = !escaped;
+      }
+
+      if (escaped) {
+        // odd number of slashes means | is escaped
+        // so we leave it alone
+        return '|';
+      } else {
+        // add space before unescaped |
+        return ' |';
+      }
+    }),
+        cells = row.split(/ \|/);
+    var i = 0;
+
+    if (cells.length > count) {
+      cells.splice(count);
+    } else {
+      while (cells.length < count) {
+        cells.push('');
+      }
+    }
+
+    for (; i < cells.length; i++) {
+      // leading or trailing whitespace is ignored per the gfm spec
+      cells[i] = cells[i].trim().replace(/\\\|/g, '|');
+    }
+
+    return cells;
+  } // Remove trailing 'c's. Equivalent to str.replace(/c*$/, '').
+  // /c*$/ is vulnerable to REDOS.
+  // invert: Remove suffix of non-c chars instead. Default falsey.
+
+
+  function rtrim(str, c, invert) {
+    var l = str.length;
+
+    if (l === 0) {
+      return '';
+    } // Length of suffix matching the invert condition.
+
+
+    var suffLen = 0; // Step left until we fail to match the invert condition.
+
+    while (suffLen < l) {
+      var currChar = str.charAt(l - suffLen - 1);
+
+      if (currChar === c && !invert) {
+        suffLen++;
+      } else if (currChar !== c && invert) {
+        suffLen++;
+      } else {
+        break;
+      }
+    }
+
+    return str.substr(0, l - suffLen);
+  }
+
+  function findClosingBracket(str, b) {
+    if (str.indexOf(b[1]) === -1) {
+      return -1;
+    }
+
+    var l = str.length;
+    var level = 0,
+        i = 0;
+
+    for (; i < l; i++) {
+      if (str[i] === '\\') {
+        i++;
+      } else if (str[i] === b[0]) {
+        level++;
+      } else if (str[i] === b[1]) {
+        level--;
+
+        if (level < 0) {
+          return i;
+        }
+      }
+    }
+
+    return -1;
+  }
+
+  function checkSanitizeDeprecation(opt) {
+    if (opt && opt.sanitize && !opt.silent) {
+      console.warn('marked(): sanitize and sanitizer parameters are deprecated since version 0.7.0, should not be used and will be removed in the future. Read more here: https://marked.js.org/#/USING_ADVANCED.md#options');
+    }
+  }
+
+  var helpers = {
+    escape: escape,
+    unescape: unescape,
+    edit: edit,
+    cleanUrl: cleanUrl,
+    resolveUrl: resolveUrl,
+    noopTest: noopTest,
+    merge: merge,
+    splitCells: splitCells,
+    rtrim: rtrim,
+    findClosingBracket: findClosingBracket,
+    checkSanitizeDeprecation: checkSanitizeDeprecation
+  };
+
+  var defaults$1 = defaults.defaults;
+  var rtrim$1 = helpers.rtrim,
+      splitCells$1 = helpers.splitCells,
+      _escape = helpers.escape,
+      findClosingBracket$1 = helpers.findClosingBracket;
+
+  function outputLink(cap, link, raw) {
+    var href = link.href;
+    var title = link.title ? _escape(link.title) : null;
+    var text = cap[1].replace(/\\([\[\]])/g, '$1');
+
+    if (cap[0].charAt(0) !== '!') {
+      return {
+        type: 'link',
+        raw: raw,
+        href: href,
+        title: title,
+        text: text
+      };
+    } else {
+      return {
+        type: 'image',
+        raw: raw,
+        href: href,
+        title: title,
+        text: _escape(text)
+      };
+    }
+  }
+
+  function indentCodeCompensation(raw, text) {
+    var matchIndentToCode = raw.match(/^(\s+)(?:```)/);
+
+    if (matchIndentToCode === null) {
+      return text;
+    }
+
+    var indentToCode = matchIndentToCode[1];
+    return text.split('\n').map(function (node) {
+      var matchIndentInNode = node.match(/^\s+/);
+
+      if (matchIndentInNode === null) {
+        return node;
+      }
+
+      var indentInNode = matchIndentInNode[0];
+
+      if (indentInNode.length >= indentToCode.length) {
+        return node.slice(indentToCode.length);
+      }
+
+      return node;
+    }).join('\n');
+  }
+  /**
+   * Tokenizer
+   */
+
+
+  var Tokenizer_1 = /*#__PURE__*/function () {
+    function Tokenizer(options) {
+      this.options = options || defaults$1;
+    }
+
+    var _proto = Tokenizer.prototype;
+
+    _proto.space = function space(src) {
+      var cap = this.rules.block.newline.exec(src);
+
+      if (cap) {
+        if (cap[0].length > 1) {
+          return {
+            type: 'space',
+            raw: cap[0]
+          };
+        }
+
+        return {
+          raw: '\n'
+        };
+      }
+    };
+
+    _proto.code = function code(src, tokens) {
+      var cap = this.rules.block.code.exec(src);
+
+      if (cap) {
+        var lastToken = tokens[tokens.length - 1]; // An indented code block cannot interrupt a paragraph.
+
+        if (lastToken && lastToken.type === 'paragraph') {
+          return {
+            raw: cap[0],
+            text: cap[0].trimRight()
+          };
+        }
+
+        var text = cap[0].replace(/^ {4}/gm, '');
+        return {
+          type: 'code',
+          raw: cap[0],
+          codeBlockStyle: 'indented',
+          text: !this.options.pedantic ? rtrim$1(text, '\n') : text
+        };
+      }
+    };
+
+    _proto.fences = function fences(src) {
+      var cap = this.rules.block.fences.exec(src);
+
+      if (cap) {
+        var raw = cap[0];
+        var text = indentCodeCompensation(raw, cap[3] || '');
+        return {
+          type: 'code',
+          raw: raw,
+          lang: cap[2] ? cap[2].trim() : cap[2],
+          text: text
+        };
+      }
+    };
+
+    _proto.heading = function heading(src) {
+      var cap = this.rules.block.heading.exec(src);
+
+      if (cap) {
+        return {
+          type: 'heading',
+          raw: cap[0],
+          depth: cap[1].length,
+          text: cap[2]
+        };
+      }
+    };
+
+    _proto.nptable = function nptable(src) {
+      var cap = this.rules.block.nptable.exec(src);
+
+      if (cap) {
+        var item = {
+          type: 'table',
+          header: splitCells$1(cap[1].replace(/^ *| *\| *$/g, '')),
+          align: cap[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
+          cells: cap[3] ? cap[3].replace(/\n$/, '').split('\n') : [],
+          raw: cap[0]
+        };
+
+        if (item.header.length === item.align.length) {
+          var l = item.align.length;
+          var i;
+
+          for (i = 0; i < l; i++) {
+            if (/^ *-+: *$/.test(item.align[i])) {
+              item.align[i] = 'right';
+            } else if (/^ *:-+: *$/.test(item.align[i])) {
+              item.align[i] = 'center';
+            } else if (/^ *:-+ *$/.test(item.align[i])) {
+              item.align[i] = 'left';
+            } else {
+              item.align[i] = null;
+            }
+          }
+
+          l = item.cells.length;
+
+          for (i = 0; i < l; i++) {
+            item.cells[i] = splitCells$1(item.cells[i], item.header.length);
+          }
+
+          return item;
+        }
+      }
+    };
+
+    _proto.hr = function hr(src) {
+      var cap = this.rules.block.hr.exec(src);
+
+      if (cap) {
+        return {
+          type: 'hr',
+          raw: cap[0]
+        };
+      }
+    };
+
+    _proto.blockquote = function blockquote(src) {
+      var cap = this.rules.block.blockquote.exec(src);
+
+      if (cap) {
+        var text = cap[0].replace(/^ *> ?/gm, '');
+        return {
+          type: 'blockquote',
+          raw: cap[0],
+          text: text
+        };
+      }
+    };
+
+    _proto.list = function list(src) {
+      var cap = this.rules.block.list.exec(src);
+
+      if (cap) {
+        var raw = cap[0];
+        var bull = cap[2];
+        var isordered = bull.length > 1;
+        var isparen = bull[bull.length - 1] === ')';
+        var list = {
+          type: 'list',
+          raw: raw,
+          ordered: isordered,
+          start: isordered ? +bull.slice(0, -1) : '',
+          loose: false,
+          items: []
+        }; // Get each top-level item.
+
+        var itemMatch = cap[0].match(this.rules.block.item);
+        var next = false,
+            item,
+            space,
+            b,
+            addBack,
+            loose,
+            istask,
+            ischecked;
+        var l = itemMatch.length;
+
+        for (var i = 0; i < l; i++) {
+          item = itemMatch[i];
+          raw = item; // Remove the list item's bullet
+          // so it is seen as the next token.
+
+          space = item.length;
+          item = item.replace(/^ *([*+-]|\d+[.)]) */, ''); // Outdent whatever the
+          // list item contains. Hacky.
+
+          if (~item.indexOf('\n ')) {
+            space -= item.length;
+            item = !this.options.pedantic ? item.replace(new RegExp('^ {1,' + space + '}', 'gm'), '') : item.replace(/^ {1,4}/gm, '');
+          } // Determine whether the next list item belongs here.
+          // Backpedal if it does not belong in this list.
+
+
+          if (i !== l - 1) {
+            b = this.rules.block.bullet.exec(itemMatch[i + 1])[0];
+
+            if (isordered ? b.length === 1 || !isparen && b[b.length - 1] === ')' : b.length > 1 || this.options.smartLists && b !== bull) {
+              addBack = itemMatch.slice(i + 1).join('\n');
+              list.raw = list.raw.substring(0, list.raw.length - addBack.length);
+              i = l - 1;
+            }
+          } // Determine whether item is loose or not.
+          // Use: /(^|\n)(?! )[^\n]+\n\n(?!\s*$)/
+          // for discount behavior.
+
+
+          loose = next || /\n\n(?!\s*$)/.test(item);
+
+          if (i !== l - 1) {
+            next = item.charAt(item.length - 1) === '\n';
+            if (!loose) loose = next;
+          }
+
+          if (loose) {
+            list.loose = true;
+          } // Check for task list items
+
+
+          istask = /^\[[ xX]\] /.test(item);
+          ischecked = undefined;
+
+          if (istask) {
+            ischecked = item[1] !== ' ';
+            item = item.replace(/^\[[ xX]\] +/, '');
+          }
+
+          list.items.push({
+            type: 'list_item',
+            raw: raw,
+            task: istask,
+            checked: ischecked,
+            loose: loose,
+            text: item
+          });
+        }
+
+        return list;
+      }
+    };
+
+    _proto.html = function html(src) {
+      var cap = this.rules.block.html.exec(src);
+
+      if (cap) {
+        return {
+          type: this.options.sanitize ? 'paragraph' : 'html',
+          raw: cap[0],
+          pre: !this.options.sanitizer && (cap[1] === 'pre' || cap[1] === 'script' || cap[1] === 'style'),
+          text: this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : _escape(cap[0]) : cap[0]
+        };
+      }
+    };
+
+    _proto.def = function def(src) {
+      var cap = this.rules.block.def.exec(src);
+
+      if (cap) {
+        if (cap[3]) cap[3] = cap[3].substring(1, cap[3].length - 1);
+        var tag = cap[1].toLowerCase().replace(/\s+/g, ' ');
+        return {
+          tag: tag,
+          raw: cap[0],
+          href: cap[2],
+          title: cap[3]
+        };
+      }
+    };
+
+    _proto.table = function table(src) {
+      var cap = this.rules.block.table.exec(src);
+
+      if (cap) {
+        var item = {
+          type: 'table',
+          header: splitCells$1(cap[1].replace(/^ *| *\| *$/g, '')),
+          align: cap[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
+          cells: cap[3] ? cap[3].replace(/\n$/, '').split('\n') : []
+        };
+
+        if (item.header.length === item.align.length) {
+          item.raw = cap[0];
+          var l = item.align.length;
+          var i;
+
+          for (i = 0; i < l; i++) {
+            if (/^ *-+: *$/.test(item.align[i])) {
+              item.align[i] = 'right';
+            } else if (/^ *:-+: *$/.test(item.align[i])) {
+              item.align[i] = 'center';
+            } else if (/^ *:-+ *$/.test(item.align[i])) {
+              item.align[i] = 'left';
+            } else {
+              item.align[i] = null;
+            }
+          }
+
+          l = item.cells.length;
+
+          for (i = 0; i < l; i++) {
+            item.cells[i] = splitCells$1(item.cells[i].replace(/^ *\| *| *\| *$/g, ''), item.header.length);
+          }
+
+          return item;
+        }
+      }
+    };
+
+    _proto.lheading = function lheading(src) {
+      var cap = this.rules.block.lheading.exec(src);
+
+      if (cap) {
+        return {
+          type: 'heading',
+          raw: cap[0],
+          depth: cap[2].charAt(0) === '=' ? 1 : 2,
+          text: cap[1]
+        };
+      }
+    };
+
+    _proto.paragraph = function paragraph(src) {
+      var cap = this.rules.block.paragraph.exec(src);
+
+      if (cap) {
+        return {
+          type: 'paragraph',
+          raw: cap[0],
+          text: cap[1].charAt(cap[1].length - 1) === '\n' ? cap[1].slice(0, -1) : cap[1]
+        };
+      }
+    };
+
+    _proto.text = function text(src, tokens) {
+      var cap = this.rules.block.text.exec(src);
+
+      if (cap) {
+        var lastToken = tokens[tokens.length - 1];
+
+        if (lastToken && lastToken.type === 'text') {
+          return {
+            raw: cap[0],
+            text: cap[0]
+          };
+        }
+
+        return {
+          type: 'text',
+          raw: cap[0],
+          text: cap[0]
+        };
+      }
+    };
+
+    _proto.escape = function escape(src) {
+      var cap = this.rules.inline.escape.exec(src);
+
+      if (cap) {
+        return {
+          type: 'escape',
+          raw: cap[0],
+          text: _escape(cap[1])
+        };
+      }
+    };
+
+    _proto.tag = function tag(src, inLink, inRawBlock) {
+      var cap = this.rules.inline.tag.exec(src);
+
+      if (cap) {
+        if (!inLink && /^<a /i.test(cap[0])) {
+          inLink = true;
+        } else if (inLink && /^<\/a>/i.test(cap[0])) {
+          inLink = false;
+        }
+
+        if (!inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
+          inRawBlock = true;
+        } else if (inRawBlock && /^<\/(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
+          inRawBlock = false;
+        }
+
+        return {
+          type: this.options.sanitize ? 'text' : 'html',
+          raw: cap[0],
+          inLink: inLink,
+          inRawBlock: inRawBlock,
+          text: this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : _escape(cap[0]) : cap[0]
+        };
+      }
+    };
+
+    _proto.link = function link(src) {
+      var cap = this.rules.inline.link.exec(src);
+
+      if (cap) {
+        var lastParenIndex = findClosingBracket$1(cap[2], '()');
+
+        if (lastParenIndex > -1) {
+          var start = cap[0].indexOf('!') === 0 ? 5 : 4;
+          var linkLen = start + cap[1].length + lastParenIndex;
+          cap[2] = cap[2].substring(0, lastParenIndex);
+          cap[0] = cap[0].substring(0, linkLen).trim();
+          cap[3] = '';
+        }
+
+        var href = cap[2];
+        var title = '';
+
+        if (this.options.pedantic) {
+          var link = /^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(href);
+
+          if (link) {
+            href = link[1];
+            title = link[3];
+          } else {
+            title = '';
+          }
+        } else {
+          title = cap[3] ? cap[3].slice(1, -1) : '';
+        }
+
+        href = href.trim().replace(/^<([\s\S]*)>$/, '$1');
+        var token = outputLink(cap, {
+          href: href ? href.replace(this.rules.inline._escapes, '$1') : href,
+          title: title ? title.replace(this.rules.inline._escapes, '$1') : title
+        }, cap[0]);
+        return token;
+      }
+    };
+
+    _proto.reflink = function reflink(src, links) {
+      var cap;
+
+      if ((cap = this.rules.inline.reflink.exec(src)) || (cap = this.rules.inline.nolink.exec(src))) {
+        var link = (cap[2] || cap[1]).replace(/\s+/g, ' ');
+        link = links[link.toLowerCase()];
+
+        if (!link || !link.href) {
+          var text = cap[0].charAt(0);
+          return {
+            type: 'text',
+            raw: text,
+            text: text
+          };
+        }
+
+        var token = outputLink(cap, link, cap[0]);
+        return token;
+      }
+    };
+
+    _proto.strong = function strong(src, maskedSrc, prevChar) {
+      if (prevChar === void 0) {
+        prevChar = '';
+      }
+
+      var match = this.rules.inline.strong.start.exec(src);
+
+      if (match && (!match[1] || match[1] && (prevChar === '' || this.rules.inline.punctuation.exec(prevChar)))) {
+        maskedSrc = maskedSrc.slice(-1 * src.length);
+        var endReg = match[0] === '**' ? this.rules.inline.strong.endAst : this.rules.inline.strong.endUnd;
+        endReg.lastIndex = 0;
+        var cap;
+
+        while ((match = endReg.exec(maskedSrc)) != null) {
+          cap = this.rules.inline.strong.middle.exec(maskedSrc.slice(0, match.index + 3));
+
+          if (cap) {
+            return {
+              type: 'strong',
+              raw: src.slice(0, cap[0].length),
+              text: src.slice(2, cap[0].length - 2)
+            };
+          }
+        }
+      }
+    };
+
+    _proto.em = function em(src, maskedSrc, prevChar) {
+      if (prevChar === void 0) {
+        prevChar = '';
+      }
+
+      var match = this.rules.inline.em.start.exec(src);
+
+      if (match && (!match[1] || match[1] && (prevChar === '' || this.rules.inline.punctuation.exec(prevChar)))) {
+        maskedSrc = maskedSrc.slice(-1 * src.length);
+        var endReg = match[0] === '*' ? this.rules.inline.em.endAst : this.rules.inline.em.endUnd;
+        endReg.lastIndex = 0;
+        var cap;
+
+        while ((match = endReg.exec(maskedSrc)) != null) {
+          cap = this.rules.inline.em.middle.exec(maskedSrc.slice(0, match.index + 2));
+
+          if (cap) {
+            return {
+              type: 'em',
+              raw: src.slice(0, cap[0].length),
+              text: src.slice(1, cap[0].length - 1)
+            };
+          }
+        }
+      }
+    };
+
+    _proto.codespan = function codespan(src) {
+      var cap = this.rules.inline.code.exec(src);
+
+      if (cap) {
+        var text = cap[2].replace(/\n/g, ' ');
+        var hasNonSpaceChars = /[^ ]/.test(text);
+        var hasSpaceCharsOnBothEnds = text.startsWith(' ') && text.endsWith(' ');
+
+        if (hasNonSpaceChars && hasSpaceCharsOnBothEnds) {
+          text = text.substring(1, text.length - 1);
+        }
+
+        text = _escape(text, true);
+        return {
+          type: 'codespan',
+          raw: cap[0],
+          text: text
+        };
+      }
+    };
+
+    _proto.br = function br(src) {
+      var cap = this.rules.inline.br.exec(src);
+
+      if (cap) {
+        return {
+          type: 'br',
+          raw: cap[0]
+        };
+      }
+    };
+
+    _proto.del = function del(src) {
+      var cap = this.rules.inline.del.exec(src);
+
+      if (cap) {
+        return {
+          type: 'del',
+          raw: cap[0],
+          text: cap[1]
+        };
+      }
+    };
+
+    _proto.autolink = function autolink(src, mangle) {
+      var cap = this.rules.inline.autolink.exec(src);
+
+      if (cap) {
+        var text, href;
+
+        if (cap[2] === '@') {
+          text = _escape(this.options.mangle ? mangle(cap[1]) : cap[1]);
+          href = 'mailto:' + text;
+        } else {
+          text = _escape(cap[1]);
+          href = text;
+        }
+
+        return {
+          type: 'link',
+          raw: cap[0],
+          text: text,
+          href: href,
+          tokens: [{
+            type: 'text',
+            raw: text,
+            text: text
+          }]
+        };
+      }
+    };
+
+    _proto.url = function url(src, mangle) {
+      var cap;
+
+      if (cap = this.rules.inline.url.exec(src)) {
+        var text, href;
+
+        if (cap[2] === '@') {
+          text = _escape(this.options.mangle ? mangle(cap[0]) : cap[0]);
+          href = 'mailto:' + text;
+        } else {
+          // do extended autolink path validation
+          var prevCapZero;
+
+          do {
+            prevCapZero = cap[0];
+            cap[0] = this.rules.inline._backpedal.exec(cap[0])[0];
+          } while (prevCapZero !== cap[0]);
+
+          text = _escape(cap[0]);
+
+          if (cap[1] === 'www.') {
+            href = 'http://' + text;
+          } else {
+            href = text;
+          }
+        }
+
+        return {
+          type: 'link',
+          raw: cap[0],
+          text: text,
+          href: href,
+          tokens: [{
+            type: 'text',
+            raw: text,
+            text: text
+          }]
+        };
+      }
+    };
+
+    _proto.inlineText = function inlineText(src, inRawBlock, smartypants) {
+      var cap = this.rules.inline.text.exec(src);
+
+      if (cap) {
+        var text;
+
+        if (inRawBlock) {
+          text = this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : _escape(cap[0]) : cap[0];
+        } else {
+          text = _escape(this.options.smartypants ? smartypants(cap[0]) : cap[0]);
+        }
+
+        return {
+          type: 'text',
+          raw: cap[0],
+          text: text
+        };
+      }
+    };
+
+    return Tokenizer;
+  }();
+
+  var noopTest$1 = helpers.noopTest,
+      edit$1 = helpers.edit,
+      merge$1 = helpers.merge;
+  /**
+   * Block-Level Grammar
+   */
+
+  var block = {
+    newline: /^\n+/,
+    code: /^( {4}[^\n]+\n*)+/,
+    fences: /^ {0,3}(`{3,}(?=[^`\n]*\n)|~{3,})([^\n]*)\n(?:|([\s\S]*?)\n)(?: {0,3}\1[~`]* *(?:\n+|$)|$)/,
+    hr: /^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/,
+    heading: /^ {0,3}(#{1,6}) +([^\n]*?)(?: +#+)? *(?:\n+|$)/,
+    blockquote: /^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/,
+    list: /^( {0,3})(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?!\1bull )\n*|\s*$)/,
+    html: '^ {0,3}(?:' // optional indentation
+    + '<(script|pre|style)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)' // (1)
+    + '|comment[^\\n]*(\\n+|$)' // (2)
+    + '|<\\?[\\s\\S]*?(?:\\?>\\n*|$)' // (3)
+    + '|<![A-Z][\\s\\S]*?(?:>\\n*|$)' // (4)
+    + '|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)' // (5)
+    + '|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:\\n{2,}|$)' // (6)
+    + '|<(?!script|pre|style)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)' // (7) open tag
+    + '|</(?!script|pre|style)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)' // (7) closing tag
+    + ')',
+    def: /^ {0,3}\[(label)\]: *\n? *<?([^\s>]+)>?(?:(?: +\n? *| *\n *)(title))? *(?:\n+|$)/,
+    nptable: noopTest$1,
+    table: noopTest$1,
+    lheading: /^([^\n]+)\n {0,3}(=+|-+) *(?:\n+|$)/,
+    // regex template, placeholders will be replaced according to different paragraph
+    // interruption rules of commonmark and the original markdown spec:
+    _paragraph: /^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html)[^\n]+)*)/,
+    text: /^[^\n]+/
+  };
+  block._label = /(?!\s*\])(?:\\[\[\]]|[^\[\]])+/;
+  block._title = /(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/;
+  block.def = edit$1(block.def).replace('label', block._label).replace('title', block._title).getRegex();
+  block.bullet = /(?:[*+-]|\d{1,9}[.)])/;
+  block.item = /^( *)(bull) ?[^\n]*(?:\n(?!\1bull ?)[^\n]*)*/;
+  block.item = edit$1(block.item, 'gm').replace(/bull/g, block.bullet).getRegex();
+  block.list = edit$1(block.list).replace(/bull/g, block.bullet).replace('hr', '\\n+(?=\\1?(?:(?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$))').replace('def', '\\n+(?=' + block.def.source + ')').getRegex();
+  block._tag = 'address|article|aside|base|basefont|blockquote|body|caption' + '|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption' + '|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe' + '|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option' + '|p|param|section|source|summary|table|tbody|td|tfoot|th|thead|title|tr' + '|track|ul';
+  block._comment = /<!--(?!-?>)[\s\S]*?(?:-->|$)/;
+  block.html = edit$1(block.html, 'i').replace('comment', block._comment).replace('tag', block._tag).replace('attribute', / +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex();
+  block.paragraph = edit$1(block._paragraph).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} ').replace('|lheading', '') // setex headings don't interrupt commonmark paragraphs
+  .replace('blockquote', ' {0,3}>').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
+  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // pars can be interrupted by type (6) html blocks
+  .getRegex();
+  block.blockquote = edit$1(block.blockquote).replace('paragraph', block.paragraph).getRegex();
+  /**
+   * Normal Block Grammar
+   */
+
+  block.normal = merge$1({}, block);
+  /**
+   * GFM Block Grammar
+   */
+
+  block.gfm = merge$1({}, block.normal, {
+    nptable: '^ *([^|\\n ].*\\|.*)\\n' // Header
+    + ' {0,3}([-:]+ *\\|[-| :]*)' // Align
+    + '(?:\\n((?:(?!\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)',
+    // Cells
+    table: '^ *\\|(.+)\\n' // Header
+    + ' {0,3}\\|?( *[-:]+[-| :]*)' // Align
+    + '(?:\\n *((?:(?!\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)' // Cells
+
+  });
+  block.gfm.nptable = edit$1(block.gfm.nptable).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} ').replace('blockquote', ' {0,3}>').replace('code', ' {4}[^\\n]').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
+  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // tables can be interrupted by type (6) html blocks
+  .getRegex();
+  block.gfm.table = edit$1(block.gfm.table).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} ').replace('blockquote', ' {0,3}>').replace('code', ' {4}[^\\n]').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
+  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // tables can be interrupted by type (6) html blocks
+  .getRegex();
+  /**
+   * Pedantic grammar (original John Gruber's loose markdown specification)
+   */
+
+  block.pedantic = merge$1({}, block.normal, {
+    html: edit$1('^ *(?:comment *(?:\\n|\\s*$)' + '|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)' // closed tag
+    + '|<tag(?:"[^"]*"|\'[^\']*\'|\\s[^\'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))').replace('comment', block._comment).replace(/tag/g, '(?!(?:' + 'a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub' + '|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)' + '\\b)\\w+(?!:|[^\\w\\s@]*@)\\b').getRegex(),
+    def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,
+    heading: /^ *(#{1,6}) *([^\n]+?) *(?:#+ *)?(?:\n+|$)/,
+    fences: noopTest$1,
+    // fences not supported
+    paragraph: edit$1(block.normal._paragraph).replace('hr', block.hr).replace('heading', ' *#{1,6} *[^\n]').replace('lheading', block.lheading).replace('blockquote', ' {0,3}>').replace('|fences', '').replace('|list', '').replace('|html', '').getRegex()
+  });
+  /**
+   * Inline-Level Grammar
+   */
+
+  var inline = {
+    escape: /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,
+    autolink: /^<(scheme:[^\s\x00-\x1f<>]*|email)>/,
+    url: noopTest$1,
+    tag: '^comment' + '|^</[a-zA-Z][\\w:-]*\\s*>' // self-closing tag
+    + '|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>' // open tag
+    + '|^<\\?[\\s\\S]*?\\?>' // processing instruction, e.g. <?php ?>
+    + '|^<![a-zA-Z]+\\s[\\s\\S]*?>' // declaration, e.g. <!DOCTYPE html>
+    + '|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>',
+    // CDATA section
+    link: /^!?\[(label)\]\(\s*(href)(?:\s+(title))?\s*\)/,
+    reflink: /^!?\[(label)\]\[(?!\s*\])((?:\\[\[\]]?|[^\[\]\\])+)\]/,
+    nolink: /^!?\[(?!\s*\])((?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]])*)\](?:\[\])?/,
+    reflinkSearch: 'reflink|nolink(?!\\()',
+    strong: {
+      start: /^(?:(\*\*(?=[*punctuation]))|\*\*)(?![\s])|__/,
+      // (1) returns if starts w/ punctuation
+      middle: /^\*\*(?:(?:(?!overlapSkip)(?:[^*]|\\\*)|overlapSkip)|\*(?:(?!overlapSkip)(?:[^*]|\\\*)|overlapSkip)*?\*)+?\*\*$|^__(?![\s])((?:(?:(?!overlapSkip)(?:[^_]|\\_)|overlapSkip)|_(?:(?!overlapSkip)(?:[^_]|\\_)|overlapSkip)*?_)+?)__$/,
+      endAst: /[^punctuation\s]\*\*(?!\*)|[punctuation]\*\*(?!\*)(?:(?=[punctuation_\s]|$))/,
+      // last char can't be punct, or final * must also be followed by punct (or endline)
+      endUnd: /[^\s]__(?!_)(?:(?=[punctuation*\s])|$)/ // last char can't be a space, and final _ must preceed punct or \s (or endline)
+
+    },
+    em: {
+      start: /^(?:(\*(?=[punctuation]))|\*)(?![*\s])|_/,
+      // (1) returns if starts w/ punctuation
+      middle: /^\*(?:(?:(?!overlapSkip)(?:[^*]|\\\*)|overlapSkip)|\*(?:(?!overlapSkip)(?:[^*]|\\\*)|overlapSkip)*?\*)+?\*$|^_(?![_\s])(?:(?:(?!overlapSkip)(?:[^_]|\\_)|overlapSkip)|_(?:(?!overlapSkip)(?:[^_]|\\_)|overlapSkip)*?_)+?_$/,
+      endAst: /[^punctuation\s]\*(?!\*)|[punctuation]\*(?!\*)(?:(?=[punctuation_\s]|$))/,
+      // last char can't be punct, or final * must also be followed by punct (or endline)
+      endUnd: /[^\s]_(?!_)(?:(?=[punctuation*\s])|$)/ // last char can't be a space, and final _ must preceed punct or \s (or endline)
+
+    },
+    code: /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,
+    br: /^( {2,}|\\)\n(?!\s*$)/,
+    del: noopTest$1,
+    text: /^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*]|\b_|$)|[^ ](?= {2,}\n)))/,
+    punctuation: /^([\s*punctuation])/
+  }; // list of punctuation marks from common mark spec
+  // without * and _ to workaround cases with double emphasis
+
+  inline._punctuation = '!"#$%&\'()+\\-.,/:;<=>?@\\[\\]`^{|}~';
+  inline.punctuation = edit$1(inline.punctuation).replace(/punctuation/g, inline._punctuation).getRegex(); // sequences em should skip over [title](link), `code`, <html>
+
+  inline._blockSkip = '\\[[^\\]]*?\\]\\([^\\)]*?\\)|`[^`]*?`|<[^>]*?>';
+  inline._overlapSkip = '__[^_]*?__|\\*\\*\\[^\\*\\]*?\\*\\*';
+  inline._comment = edit$1(block._comment).replace('(?:-->|$)', '-->').getRegex();
+  inline.em.start = edit$1(inline.em.start).replace(/punctuation/g, inline._punctuation).getRegex();
+  inline.em.middle = edit$1(inline.em.middle).replace(/punctuation/g, inline._punctuation).replace(/overlapSkip/g, inline._overlapSkip).getRegex();
+  inline.em.endAst = edit$1(inline.em.endAst, 'g').replace(/punctuation/g, inline._punctuation).getRegex();
+  inline.em.endUnd = edit$1(inline.em.endUnd, 'g').replace(/punctuation/g, inline._punctuation).getRegex();
+  inline.strong.start = edit$1(inline.strong.start).replace(/punctuation/g, inline._punctuation).getRegex();
+  inline.strong.middle = edit$1(inline.strong.middle).replace(/punctuation/g, inline._punctuation).replace(/overlapSkip/g, inline._overlapSkip).getRegex();
+  inline.strong.endAst = edit$1(inline.strong.endAst, 'g').replace(/punctuation/g, inline._punctuation).getRegex();
+  inline.strong.endUnd = edit$1(inline.strong.endUnd, 'g').replace(/punctuation/g, inline._punctuation).getRegex();
+  inline.blockSkip = edit$1(inline._blockSkip, 'g').getRegex();
+  inline.overlapSkip = edit$1(inline._overlapSkip, 'g').getRegex();
+  inline._escapes = /\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/g;
+  inline._scheme = /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/;
+  inline._email = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/;
+  inline.autolink = edit$1(inline.autolink).replace('scheme', inline._scheme).replace('email', inline._email).getRegex();
+  inline._attribute = /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/;
+  inline.tag = edit$1(inline.tag).replace('comment', inline._comment).replace('attribute', inline._attribute).getRegex();
+  inline._label = /(?:\[(?:\\.|[^\[\]\\])*\]|\\.|`[^`]*`|[^\[\]\\`])*?/;
+  inline._href = /<(?:\\[<>]?|[^\s<>\\])*>|[^\s\x00-\x1f]*/;
+  inline._title = /"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/;
+  inline.link = edit$1(inline.link).replace('label', inline._label).replace('href', inline._href).replace('title', inline._title).getRegex();
+  inline.reflink = edit$1(inline.reflink).replace('label', inline._label).getRegex();
+  inline.reflinkSearch = edit$1(inline.reflinkSearch, 'g').replace('reflink', inline.reflink).replace('nolink', inline.nolink).getRegex();
+  /**
+   * Normal Inline Grammar
+   */
+
+  inline.normal = merge$1({}, inline);
+  /**
+   * Pedantic Inline Grammar
+   */
+
+  inline.pedantic = merge$1({}, inline.normal, {
+    strong: {
+      start: /^__|\*\*/,
+      middle: /^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,
+      endAst: /\*\*(?!\*)/g,
+      endUnd: /__(?!_)/g
+    },
+    em: {
+      start: /^_|\*/,
+      middle: /^()\*(?=\S)([\s\S]*?\S)\*(?!\*)|^_(?=\S)([\s\S]*?\S)_(?!_)/,
+      endAst: /\*(?!\*)/g,
+      endUnd: /_(?!_)/g
+    },
+    link: edit$1(/^!?\[(label)\]\((.*?)\)/).replace('label', inline._label).getRegex(),
+    reflink: edit$1(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace('label', inline._label).getRegex()
+  });
+  /**
+   * GFM Inline Grammar
+   */
+
+  inline.gfm = merge$1({}, inline.normal, {
+    escape: edit$1(inline.escape).replace('])', '~|])').getRegex(),
+    _extended_email: /[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/,
+    url: /^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/,
+    _backpedal: /(?:[^?!.,:;*_~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_~)]+(?!$))+/,
+    del: /^~+(?=\S)([\s\S]*?\S)~+/,
+    text: /^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*~]|\b_|https?:\/\/|ftp:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))|(?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))/
+  });
+  inline.gfm.url = edit$1(inline.gfm.url, 'i').replace('email', inline.gfm._extended_email).getRegex();
+  /**
+   * GFM + Line Breaks Inline Grammar
+   */
+
+  inline.breaks = merge$1({}, inline.gfm, {
+    br: edit$1(inline.br).replace('{2,}', '*').getRegex(),
+    text: edit$1(inline.gfm.text).replace('\\b_', '\\b_| {2,}\\n').replace(/\{2,\}/g, '*').getRegex()
+  });
+  var rules = {
+    block: block,
+    inline: inline
+  };
+
+  var defaults$2 = defaults.defaults;
+  var block$1 = rules.block,
+      inline$1 = rules.inline;
+  /**
+   * smartypants text replacement
+   */
+
+  function smartypants(text) {
+    return text // em-dashes
+    .replace(/---/g, "\u2014") // en-dashes
+    .replace(/--/g, "\u2013") // opening singles
+    .replace(/(^|[-\u2014/(\[{"\s])'/g, "$1\u2018") // closing singles & apostrophes
+    .replace(/'/g, "\u2019") // opening doubles
+    .replace(/(^|[-\u2014/(\[{\u2018\s])"/g, "$1\u201C") // closing doubles
+    .replace(/"/g, "\u201D") // ellipses
+    .replace(/\.{3}/g, "\u2026");
+  }
+  /**
+   * mangle email addresses
+   */
+
+
+  function mangle(text) {
+    var out = '',
+        i,
+        ch;
+    var l = text.length;
+
+    for (i = 0; i < l; i++) {
+      ch = text.charCodeAt(i);
+
+      if (Math.random() > 0.5) {
+        ch = 'x' + ch.toString(16);
+      }
+
+      out += '&#' + ch + ';';
+    }
+
+    return out;
+  }
+  /**
+   * Block Lexer
+   */
+
+
+  var Lexer_1 = /*#__PURE__*/function () {
+    function Lexer(options) {
+      this.tokens = [];
+      this.tokens.links = Object.create(null);
+      this.options = options || defaults$2;
+      this.options.tokenizer = this.options.tokenizer || new Tokenizer_1();
+      this.tokenizer = this.options.tokenizer;
+      this.tokenizer.options = this.options;
+      var rules = {
+        block: block$1.normal,
+        inline: inline$1.normal
+      };
+
+      if (this.options.pedantic) {
+        rules.block = block$1.pedantic;
+        rules.inline = inline$1.pedantic;
+      } else if (this.options.gfm) {
+        rules.block = block$1.gfm;
+
+        if (this.options.breaks) {
+          rules.inline = inline$1.breaks;
+        } else {
+          rules.inline = inline$1.gfm;
+        }
+      }
+
+      this.tokenizer.rules = rules;
+    }
+    /**
+     * Expose Rules
+     */
+
+
+    /**
+     * Static Lex Method
+     */
+    Lexer.lex = function lex(src, options) {
+      var lexer = new Lexer(options);
+      return lexer.lex(src);
+    }
+    /**
+     * Static Lex Inline Method
+     */
+    ;
+
+    Lexer.lexInline = function lexInline(src, options) {
+      var lexer = new Lexer(options);
+      return lexer.inlineTokens(src);
+    }
+    /**
+     * Preprocessing
+     */
+    ;
+
+    var _proto = Lexer.prototype;
+
+    _proto.lex = function lex(src) {
+      src = src.replace(/\r\n|\r/g, '\n').replace(/\t/g, '    ');
+      this.blockTokens(src, this.tokens, true);
+      this.inline(this.tokens);
+      return this.tokens;
+    }
+    /**
+     * Lexing
+     */
+    ;
+
+    _proto.blockTokens = function blockTokens(src, tokens, top) {
+      if (tokens === void 0) {
+        tokens = [];
+      }
+
+      if (top === void 0) {
+        top = true;
+      }
+
+      src = src.replace(/^ +$/gm, '');
+      var token, i, l, lastToken;
+
+      while (src) {
+        // newline
+        if (token = this.tokenizer.space(src)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type) {
+            tokens.push(token);
+          }
+
+          continue;
+        } // code
+
+
+        if (token = this.tokenizer.code(src, tokens)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type) {
+            tokens.push(token);
+          } else {
+            lastToken = tokens[tokens.length - 1];
+            lastToken.raw += '\n' + token.raw;
+            lastToken.text += '\n' + token.text;
+          }
+
+          continue;
+        } // fences
+
+
+        if (token = this.tokenizer.fences(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // heading
+
+
+        if (token = this.tokenizer.heading(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // table no leading pipe (gfm)
+
+
+        if (token = this.tokenizer.nptable(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // hr
+
+
+        if (token = this.tokenizer.hr(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // blockquote
+
+
+        if (token = this.tokenizer.blockquote(src)) {
+          src = src.substring(token.raw.length);
+          token.tokens = this.blockTokens(token.text, [], top);
+          tokens.push(token);
+          continue;
+        } // list
+
+
+        if (token = this.tokenizer.list(src)) {
+          src = src.substring(token.raw.length);
+          l = token.items.length;
+
+          for (i = 0; i < l; i++) {
+            token.items[i].tokens = this.blockTokens(token.items[i].text, [], false);
+          }
+
+          tokens.push(token);
+          continue;
+        } // html
+
+
+        if (token = this.tokenizer.html(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // def
+
+
+        if (top && (token = this.tokenizer.def(src))) {
+          src = src.substring(token.raw.length);
+
+          if (!this.tokens.links[token.tag]) {
+            this.tokens.links[token.tag] = {
+              href: token.href,
+              title: token.title
+            };
+          }
+
+          continue;
+        } // table (gfm)
+
+
+        if (token = this.tokenizer.table(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // lheading
+
+
+        if (token = this.tokenizer.lheading(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // top-level paragraph
+
+
+        if (top && (token = this.tokenizer.paragraph(src))) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // text
+
+
+        if (token = this.tokenizer.text(src, tokens)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type) {
+            tokens.push(token);
+          } else {
+            lastToken = tokens[tokens.length - 1];
+            lastToken.raw += '\n' + token.raw;
+            lastToken.text += '\n' + token.text;
+          }
+
+          continue;
+        }
+
+        if (src) {
+          var errMsg = 'Infinite loop on byte: ' + src.charCodeAt(0);
+
+          if (this.options.silent) {
+            console.error(errMsg);
+            break;
+          } else {
+            throw new Error(errMsg);
+          }
+        }
+      }
+
+      return tokens;
+    };
+
+    _proto.inline = function inline(tokens) {
+      var i, j, k, l2, row, token;
+      var l = tokens.length;
+
+      for (i = 0; i < l; i++) {
+        token = tokens[i];
+
+        switch (token.type) {
+          case 'paragraph':
+          case 'text':
+          case 'heading':
+            {
+              token.tokens = [];
+              this.inlineTokens(token.text, token.tokens);
+              break;
+            }
+
+          case 'table':
+            {
+              token.tokens = {
+                header: [],
+                cells: []
+              }; // header
+
+              l2 = token.header.length;
+
+              for (j = 0; j < l2; j++) {
+                token.tokens.header[j] = [];
+                this.inlineTokens(token.header[j], token.tokens.header[j]);
+              } // cells
+
+
+              l2 = token.cells.length;
+
+              for (j = 0; j < l2; j++) {
+                row = token.cells[j];
+                token.tokens.cells[j] = [];
+
+                for (k = 0; k < row.length; k++) {
+                  token.tokens.cells[j][k] = [];
+                  this.inlineTokens(row[k], token.tokens.cells[j][k]);
+                }
+              }
+
+              break;
+            }
+
+          case 'blockquote':
+            {
+              this.inline(token.tokens);
+              break;
+            }
+
+          case 'list':
+            {
+              l2 = token.items.length;
+
+              for (j = 0; j < l2; j++) {
+                this.inline(token.items[j].tokens);
+              }
+
+              break;
+            }
+        }
+      }
+
+      return tokens;
+    }
+    /**
+     * Lexing/Compiling
+     */
+    ;
+
+    _proto.inlineTokens = function inlineTokens(src, tokens, inLink, inRawBlock, prevChar) {
+      if (tokens === void 0) {
+        tokens = [];
+      }
+
+      if (inLink === void 0) {
+        inLink = false;
+      }
+
+      if (inRawBlock === void 0) {
+        inRawBlock = false;
+      }
+
+      if (prevChar === void 0) {
+        prevChar = '';
+      }
+
+      var token; // String with links masked to avoid interference with em and strong
+
+      var maskedSrc = src;
+      var match; // Mask out reflinks
+
+      if (this.tokens.links) {
+        var links = Object.keys(this.tokens.links);
+
+        if (links.length > 0) {
+          while ((match = this.tokenizer.rules.inline.reflinkSearch.exec(maskedSrc)) != null) {
+            if (links.includes(match[0].slice(match[0].lastIndexOf('[') + 1, -1))) {
+              maskedSrc = maskedSrc.slice(0, match.index) + '[' + 'a'.repeat(match[0].length - 2) + ']' + maskedSrc.slice(this.tokenizer.rules.inline.reflinkSearch.lastIndex);
+            }
+          }
+        }
+      } // Mask out other blocks
+
+
+      while ((match = this.tokenizer.rules.inline.blockSkip.exec(maskedSrc)) != null) {
+        maskedSrc = maskedSrc.slice(0, match.index) + '[' + 'a'.repeat(match[0].length - 2) + ']' + maskedSrc.slice(this.tokenizer.rules.inline.blockSkip.lastIndex);
+      }
+
+      while (src) {
+        // escape
+        if (token = this.tokenizer.escape(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // tag
+
+
+        if (token = this.tokenizer.tag(src, inLink, inRawBlock)) {
+          src = src.substring(token.raw.length);
+          inLink = token.inLink;
+          inRawBlock = token.inRawBlock;
+          tokens.push(token);
+          continue;
+        } // link
+
+
+        if (token = this.tokenizer.link(src)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type === 'link') {
+            token.tokens = this.inlineTokens(token.text, [], true, inRawBlock);
+          }
+
+          tokens.push(token);
+          continue;
+        } // reflink, nolink
+
+
+        if (token = this.tokenizer.reflink(src, this.tokens.links)) {
+          src = src.substring(token.raw.length);
+
+          if (token.type === 'link') {
+            token.tokens = this.inlineTokens(token.text, [], true, inRawBlock);
+          }
+
+          tokens.push(token);
+          continue;
+        } // strong
+
+
+        if (token = this.tokenizer.strong(src, maskedSrc, prevChar)) {
+          src = src.substring(token.raw.length);
+          token.tokens = this.inlineTokens(token.text, [], inLink, inRawBlock);
+          tokens.push(token);
+          continue;
+        } // em
+
+
+        if (token = this.tokenizer.em(src, maskedSrc, prevChar)) {
+          src = src.substring(token.raw.length);
+          token.tokens = this.inlineTokens(token.text, [], inLink, inRawBlock);
+          tokens.push(token);
+          continue;
+        } // code
+
+
+        if (token = this.tokenizer.codespan(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // br
+
+
+        if (token = this.tokenizer.br(src)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // del (gfm)
+
+
+        if (token = this.tokenizer.del(src)) {
+          src = src.substring(token.raw.length);
+          token.tokens = this.inlineTokens(token.text, [], inLink, inRawBlock);
+          tokens.push(token);
+          continue;
+        } // autolink
+
+
+        if (token = this.tokenizer.autolink(src, mangle)) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // url (gfm)
+
+
+        if (!inLink && (token = this.tokenizer.url(src, mangle))) {
+          src = src.substring(token.raw.length);
+          tokens.push(token);
+          continue;
+        } // text
+
+
+        if (token = this.tokenizer.inlineText(src, inRawBlock, smartypants)) {
+          src = src.substring(token.raw.length);
+          prevChar = token.raw.slice(-1);
+          tokens.push(token);
+          continue;
+        }
+
+        if (src) {
+          var errMsg = 'Infinite loop on byte: ' + src.charCodeAt(0);
+
+          if (this.options.silent) {
+            console.error(errMsg);
+            break;
+          } else {
+            throw new Error(errMsg);
+          }
+        }
+      }
+
+      return tokens;
+    };
+
+    _createClass(Lexer, null, [{
+      key: "rules",
+      get: function get() {
+        return {
+          block: block$1,
+          inline: inline$1
+        };
+      }
+    }]);
+
+    return Lexer;
+  }();
+
+  var defaults$3 = defaults.defaults;
+  var cleanUrl$1 = helpers.cleanUrl,
+      escape$1 = helpers.escape;
+  /**
+   * Renderer
+   */
+
+  var Renderer_1 = /*#__PURE__*/function () {
+    function Renderer(options) {
+      this.options = options || defaults$3;
+    }
+
+    var _proto = Renderer.prototype;
+
+    _proto.code = function code(_code, infostring, escaped) {
+      var lang = (infostring || '').match(/\S*/)[0];
+
+      if (this.options.highlight) {
+        var out = this.options.highlight(_code, lang);
+
+        if (out != null && out !== _code) {
+          escaped = true;
+          _code = out;
+        }
+      }
+
+      if (!lang) {
+        return '<pre><code>' + (escaped ? _code : escape$1(_code, true)) + '</code></pre>\n';
+      }
+
+      return '<pre><code class="' + this.options.langPrefix + escape$1(lang, true) + '">' + (escaped ? _code : escape$1(_code, true)) + '</code></pre>\n';
+    };
+
+    _proto.blockquote = function blockquote(quote) {
+      return '<blockquote>\n' + quote + '</blockquote>\n';
+    };
+
+    _proto.html = function html(_html) {
+      return _html;
+    };
+
+    _proto.heading = function heading(text, level, raw, slugger) {
+      if (this.options.headerIds) {
+        return '<h' + level + ' id="' + this.options.headerPrefix + slugger.slug(raw) + '">' + text + '</h' + level + '>\n';
+      } // ignore IDs
+
+
+      return '<h' + level + '>' + text + '</h' + level + '>\n';
+    };
+
+    _proto.hr = function hr() {
+      return this.options.xhtml ? '<hr/>\n' : '<hr>\n';
+    };
+
+    _proto.list = function list(body, ordered, start) {
+      var type = ordered ? 'ol' : 'ul',
+          startatt = ordered && start !== 1 ? ' start="' + start + '"' : '';
+      return '<' + type + startatt + '>\n' + body + '</' + type + '>\n';
+    };
+
+    _proto.listitem = function listitem(text) {
+      return '<li>' + text + '</li>\n';
+    };
+
+    _proto.checkbox = function checkbox(checked) {
+      return '<input ' + (checked ? 'checked="" ' : '') + 'disabled="" type="checkbox"' + (this.options.xhtml ? ' /' : '') + '> ';
+    };
+
+    _proto.paragraph = function paragraph(text) {
+      return '<p>' + text + '</p>\n';
+    };
+
+    _proto.table = function table(header, body) {
+      if (body) body = '<tbody>' + body + '</tbody>';
+      return '<table>\n' + '<thead>\n' + header + '</thead>\n' + body + '</table>\n';
+    };
+
+    _proto.tablerow = function tablerow(content) {
+      return '<tr>\n' + content + '</tr>\n';
+    };
+
+    _proto.tablecell = function tablecell(content, flags) {
+      var type = flags.header ? 'th' : 'td';
+      var tag = flags.align ? '<' + type + ' align="' + flags.align + '">' : '<' + type + '>';
+      return tag + content + '</' + type + '>\n';
+    } // span level renderer
+    ;
+
+    _proto.strong = function strong(text) {
+      return '<strong>' + text + '</strong>';
+    };
+
+    _proto.em = function em(text) {
+      return '<em>' + text + '</em>';
+    };
+
+    _proto.codespan = function codespan(text) {
+      return '<code>' + text + '</code>';
+    };
+
+    _proto.br = function br() {
+      return this.options.xhtml ? '<br/>' : '<br>';
+    };
+
+    _proto.del = function del(text) {
+      return '<del>' + text + '</del>';
+    };
+
+    _proto.link = function link(href, title, text) {
+      href = cleanUrl$1(this.options.sanitize, this.options.baseUrl, href);
+
+      if (href === null) {
+        return text;
+      }
+
+      var out = '<a href="' + escape$1(href) + '"';
+
+      if (title) {
+        out += ' title="' + title + '"';
+      }
+
+      out += '>' + text + '</a>';
+      return out;
+    };
+
+    _proto.image = function image(href, title, text) {
+      href = cleanUrl$1(this.options.sanitize, this.options.baseUrl, href);
+
+      if (href === null) {
+        return text;
+      }
+
+      var out = '<img src="' + href + '" alt="' + text + '"';
+
+      if (title) {
+        out += ' title="' + title + '"';
+      }
+
+      out += this.options.xhtml ? '/>' : '>';
+      return out;
+    };
+
+    _proto.text = function text(_text) {
+      return _text;
+    };
+
+    return Renderer;
+  }();
+
+  /**
+   * TextRenderer
+   * returns only the textual part of the token
+   */
+  var TextRenderer_1 = /*#__PURE__*/function () {
+    function TextRenderer() {}
+
+    var _proto = TextRenderer.prototype;
+
+    // no need for block level renderers
+    _proto.strong = function strong(text) {
+      return text;
+    };
+
+    _proto.em = function em(text) {
+      return text;
+    };
+
+    _proto.codespan = function codespan(text) {
+      return text;
+    };
+
+    _proto.del = function del(text) {
+      return text;
+    };
+
+    _proto.html = function html(text) {
+      return text;
+    };
+
+    _proto.text = function text(_text) {
+      return _text;
+    };
+
+    _proto.link = function link(href, title, text) {
+      return '' + text;
+    };
+
+    _proto.image = function image(href, title, text) {
+      return '' + text;
+    };
+
+    _proto.br = function br() {
+      return '';
+    };
+
+    return TextRenderer;
+  }();
+
+  /**
+   * Slugger generates header id
+   */
+  var Slugger_1 = /*#__PURE__*/function () {
+    function Slugger() {
+      this.seen = {};
+    }
+
+    var _proto = Slugger.prototype;
+
+    _proto.serialize = function serialize(value) {
+      return value.toLowerCase().trim() // remove html tags
+      .replace(/<[!\/a-z].*?>/ig, '') // remove unwanted chars
+      .replace(/[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, '').replace(/\s/g, '-');
+    }
+    /**
+     * Finds the next safe (unique) slug to use
+     */
+    ;
+
+    _proto.getNextSafeSlug = function getNextSafeSlug(originalSlug, isDryRun) {
+      var slug = originalSlug;
+      var occurenceAccumulator = 0;
+
+      if (this.seen.hasOwnProperty(slug)) {
+        occurenceAccumulator = this.seen[originalSlug];
+
+        do {
+          occurenceAccumulator++;
+          slug = originalSlug + '-' + occurenceAccumulator;
+        } while (this.seen.hasOwnProperty(slug));
+      }
+
+      if (!isDryRun) {
+        this.seen[originalSlug] = occurenceAccumulator;
+        this.seen[slug] = 0;
+      }
+
+      return slug;
+    }
+    /**
+     * Convert string to unique id
+     * @param {object} options
+     * @param {boolean} options.dryrun Generates the next unique slug without updating the internal accumulator.
+     */
+    ;
+
+    _proto.slug = function slug(value, options) {
+      if (options === void 0) {
+        options = {};
+      }
+
+      var slug = this.serialize(value);
+      return this.getNextSafeSlug(slug, options.dryrun);
+    };
+
+    return Slugger;
+  }();
+
+  var defaults$4 = defaults.defaults;
+  var unescape$1 = helpers.unescape;
+  /**
+   * Parsing & Compiling
+   */
+
+  var Parser_1 = /*#__PURE__*/function () {
+    function Parser(options) {
+      this.options = options || defaults$4;
+      this.options.renderer = this.options.renderer || new Renderer_1();
+      this.renderer = this.options.renderer;
+      this.renderer.options = this.options;
+      this.textRenderer = new TextRenderer_1();
+      this.slugger = new Slugger_1();
+    }
+    /**
+     * Static Parse Method
+     */
+
+
+    Parser.parse = function parse(tokens, options) {
+      var parser = new Parser(options);
+      return parser.parse(tokens);
+    }
+    /**
+     * Static Parse Inline Method
+     */
+    ;
+
+    Parser.parseInline = function parseInline(tokens, options) {
+      var parser = new Parser(options);
+      return parser.parseInline(tokens);
+    }
+    /**
+     * Parse Loop
+     */
+    ;
+
+    var _proto = Parser.prototype;
+
+    _proto.parse = function parse(tokens, top) {
+      if (top === void 0) {
+        top = true;
+      }
+
+      var out = '',
+          i,
+          j,
+          k,
+          l2,
+          l3,
+          row,
+          cell,
+          header,
+          body,
+          token,
+          ordered,
+          start,
+          loose,
+          itemBody,
+          item,
+          checked,
+          task,
+          checkbox;
+      var l = tokens.length;
+
+      for (i = 0; i < l; i++) {
+        token = tokens[i];
+
+        switch (token.type) {
+          case 'space':
+            {
+              continue;
+            }
+
+          case 'hr':
+            {
+              out += this.renderer.hr();
+              continue;
+            }
+
+          case 'heading':
+            {
+              out += this.renderer.heading(this.parseInline(token.tokens), token.depth, unescape$1(this.parseInline(token.tokens, this.textRenderer)), this.slugger);
+              continue;
+            }
+
+          case 'code':
+            {
+              out += this.renderer.code(token.text, token.lang, token.escaped);
+              continue;
+            }
+
+          case 'table':
+            {
+              header = ''; // header
+
+              cell = '';
+              l2 = token.header.length;
+
+              for (j = 0; j < l2; j++) {
+                cell += this.renderer.tablecell(this.parseInline(token.tokens.header[j]), {
+                  header: true,
+                  align: token.align[j]
+                });
+              }
+
+              header += this.renderer.tablerow(cell);
+              body = '';
+              l2 = token.cells.length;
+
+              for (j = 0; j < l2; j++) {
+                row = token.tokens.cells[j];
+                cell = '';
+                l3 = row.length;
+
+                for (k = 0; k < l3; k++) {
+                  cell += this.renderer.tablecell(this.parseInline(row[k]), {
+                    header: false,
+                    align: token.align[k]
+                  });
+                }
+
+                body += this.renderer.tablerow(cell);
+              }
+
+              out += this.renderer.table(header, body);
+              continue;
+            }
+
+          case 'blockquote':
+            {
+              body = this.parse(token.tokens);
+              out += this.renderer.blockquote(body);
+              continue;
+            }
+
+          case 'list':
+            {
+              ordered = token.ordered;
+              start = token.start;
+              loose = token.loose;
+              l2 = token.items.length;
+              body = '';
+
+              for (j = 0; j < l2; j++) {
+                item = token.items[j];
+                checked = item.checked;
+                task = item.task;
+                itemBody = '';
+
+                if (item.task) {
+                  checkbox = this.renderer.checkbox(checked);
+
+                  if (loose) {
+                    if (item.tokens.length > 0 && item.tokens[0].type === 'text') {
+                      item.tokens[0].text = checkbox + ' ' + item.tokens[0].text;
+
+                      if (item.tokens[0].tokens && item.tokens[0].tokens.length > 0 && item.tokens[0].tokens[0].type === 'text') {
+                        item.tokens[0].tokens[0].text = checkbox + ' ' + item.tokens[0].tokens[0].text;
+                      }
+                    } else {
+                      item.tokens.unshift({
+                        type: 'text',
+                        text: checkbox
+                      });
+                    }
+                  } else {
+                    itemBody += checkbox;
+                  }
+                }
+
+                itemBody += this.parse(item.tokens, loose);
+                body += this.renderer.listitem(itemBody, task, checked);
+              }
+
+              out += this.renderer.list(body, ordered, start);
+              continue;
+            }
+
+          case 'html':
+            {
+              // TODO parse inline content if parameter markdown=1
+              out += this.renderer.html(token.text);
+              continue;
+            }
+
+          case 'paragraph':
+            {
+              out += this.renderer.paragraph(this.parseInline(token.tokens));
+              continue;
+            }
+
+          case 'text':
+            {
+              body = token.tokens ? this.parseInline(token.tokens) : token.text;
+
+              while (i + 1 < l && tokens[i + 1].type === 'text') {
+                token = tokens[++i];
+                body += '\n' + (token.tokens ? this.parseInline(token.tokens) : token.text);
+              }
+
+              out += top ? this.renderer.paragraph(body) : body;
+              continue;
+            }
+
+          default:
+            {
+              var errMsg = 'Token with "' + token.type + '" type was not found.';
+
+              if (this.options.silent) {
+                console.error(errMsg);
+                return;
+              } else {
+                throw new Error(errMsg);
+              }
+            }
+        }
+      }
+
+      return out;
+    }
+    /**
+     * Parse Inline Tokens
+     */
+    ;
+
+    _proto.parseInline = function parseInline(tokens, renderer) {
+      renderer = renderer || this.renderer;
+      var out = '',
+          i,
+          token;
+      var l = tokens.length;
+
+      for (i = 0; i < l; i++) {
+        token = tokens[i];
+
+        switch (token.type) {
+          case 'escape':
+            {
+              out += renderer.text(token.text);
+              break;
+            }
+
+          case 'html':
+            {
+              out += renderer.html(token.text);
+              break;
+            }
+
+          case 'link':
+            {
+              out += renderer.link(token.href, token.title, this.parseInline(token.tokens, renderer));
+              break;
+            }
+
+          case 'image':
+            {
+              out += renderer.image(token.href, token.title, token.text);
+              break;
+            }
+
+          case 'strong':
+            {
+              out += renderer.strong(this.parseInline(token.tokens, renderer));
+              break;
+            }
+
+          case 'em':
+            {
+              out += renderer.em(this.parseInline(token.tokens, renderer));
+              break;
+            }
+
+          case 'codespan':
+            {
+              out += renderer.codespan(token.text);
+              break;
+            }
+
+          case 'br':
+            {
+              out += renderer.br();
+              break;
+            }
+
+          case 'del':
+            {
+              out += renderer.del(this.parseInline(token.tokens, renderer));
+              break;
+            }
+
+          case 'text':
+            {
+              out += renderer.text(token.text);
+              break;
+            }
+
+          default:
+            {
+              var errMsg = 'Token with "' + token.type + '" type was not found.';
+
+              if (this.options.silent) {
+                console.error(errMsg);
+                return;
+              } else {
+                throw new Error(errMsg);
+              }
+            }
+        }
+      }
+
+      return out;
+    };
+
+    return Parser;
+  }();
+
+  var merge$2 = helpers.merge,
+      checkSanitizeDeprecation$1 = helpers.checkSanitizeDeprecation,
+      escape$2 = helpers.escape;
+  var getDefaults = defaults.getDefaults,
+      changeDefaults = defaults.changeDefaults,
+      defaults$5 = defaults.defaults;
+  /**
+   * Marked
+   */
+
+  function marked(src, opt, callback) {
+    // throw error in case of non string input
+    if (typeof src === 'undefined' || src === null) {
+      throw new Error('marked(): input parameter is undefined or null');
+    }
+
+    if (typeof src !== 'string') {
+      throw new Error('marked(): input parameter is of type ' + Object.prototype.toString.call(src) + ', string expected');
+    }
+
+    if (typeof opt === 'function') {
+      callback = opt;
+      opt = null;
+    }
+
+    opt = merge$2({}, marked.defaults, opt || {});
+    checkSanitizeDeprecation$1(opt);
+
+    if (callback) {
+      var highlight = opt.highlight;
+      var tokens;
+
+      try {
+        tokens = Lexer_1.lex(src, opt);
+      } catch (e) {
+        return callback(e);
+      }
+
+      var done = function done(err) {
+        var out;
+
+        if (!err) {
+          try {
+            out = Parser_1.parse(tokens, opt);
+          } catch (e) {
+            err = e;
+          }
+        }
+
+        opt.highlight = highlight;
+        return err ? callback(err) : callback(null, out);
+      };
+
+      if (!highlight || highlight.length < 3) {
+        return done();
+      }
+
+      delete opt.highlight;
+      if (!tokens.length) return done();
+      var pending = 0;
+      marked.walkTokens(tokens, function (token) {
+        if (token.type === 'code') {
+          pending++;
+          setTimeout(function () {
+            highlight(token.text, token.lang, function (err, code) {
+              if (err) {
+                return done(err);
+              }
+
+              if (code != null && code !== token.text) {
+                token.text = code;
+                token.escaped = true;
+              }
+
+              pending--;
+
+              if (pending === 0) {
+                done();
+              }
+            });
+          }, 0);
+        }
+      });
+
+      if (pending === 0) {
+        done();
+      }
+
+      return;
+    }
+
+    try {
+      var _tokens = Lexer_1.lex(src, opt);
+
+      if (opt.walkTokens) {
+        marked.walkTokens(_tokens, opt.walkTokens);
+      }
+
+      return Parser_1.parse(_tokens, opt);
+    } catch (e) {
+      e.message += '\nPlease report this to https://github.com/markedjs/marked.';
+
+      if (opt.silent) {
+        return '<p>An error occurred:</p><pre>' + escape$2(e.message + '', true) + '</pre>';
+      }
+
+      throw e;
+    }
+  }
+  /**
+   * Options
+   */
+
+
+  marked.options = marked.setOptions = function (opt) {
+    merge$2(marked.defaults, opt);
+    changeDefaults(marked.defaults);
+    return marked;
+  };
+
+  marked.getDefaults = getDefaults;
+  marked.defaults = defaults$5;
+  /**
+   * Use Extension
+   */
+
+  marked.use = function (extension) {
+    var opts = merge$2({}, extension);
+
+    if (extension.renderer) {
+      (function () {
+        var renderer = marked.defaults.renderer || new Renderer_1();
+
+        var _loop = function _loop(prop) {
+          var prevRenderer = renderer[prop];
+
+          renderer[prop] = function () {
+            for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+
+            var ret = extension.renderer[prop].apply(renderer, args);
+
+            if (ret === false) {
+              ret = prevRenderer.apply(renderer, args);
+            }
+
+            return ret;
+          };
+        };
+
+        for (var prop in extension.renderer) {
+          _loop(prop);
+        }
+
+        opts.renderer = renderer;
+      })();
+    }
+
+    if (extension.tokenizer) {
+      (function () {
+        var tokenizer = marked.defaults.tokenizer || new Tokenizer_1();
+
+        var _loop2 = function _loop2(prop) {
+          var prevTokenizer = tokenizer[prop];
+
+          tokenizer[prop] = function () {
+            for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+              args[_key2] = arguments[_key2];
+            }
+
+            var ret = extension.tokenizer[prop].apply(tokenizer, args);
+
+            if (ret === false) {
+              ret = prevTokenizer.apply(tokenizer, args);
+            }
+
+            return ret;
+          };
+        };
+
+        for (var prop in extension.tokenizer) {
+          _loop2(prop);
+        }
+
+        opts.tokenizer = tokenizer;
+      })();
+    }
+
+    if (extension.walkTokens) {
+      var walkTokens = marked.defaults.walkTokens;
+
+      opts.walkTokens = function (token) {
+        extension.walkTokens(token);
+
+        if (walkTokens) {
+          walkTokens(token);
+        }
+      };
+    }
+
+    marked.setOptions(opts);
+  };
+  /**
+   * Run callback for every token
+   */
+
+
+  marked.walkTokens = function (tokens, callback) {
+    for (var _iterator = _createForOfIteratorHelperLoose(tokens), _step; !(_step = _iterator()).done;) {
+      var token = _step.value;
+      callback(token);
+
+      switch (token.type) {
+        case 'table':
+          {
+            for (var _iterator2 = _createForOfIteratorHelperLoose(token.tokens.header), _step2; !(_step2 = _iterator2()).done;) {
+              var cell = _step2.value;
+              marked.walkTokens(cell, callback);
+            }
+
+            for (var _iterator3 = _createForOfIteratorHelperLoose(token.tokens.cells), _step3; !(_step3 = _iterator3()).done;) {
+              var row = _step3.value;
+
+              for (var _iterator4 = _createForOfIteratorHelperLoose(row), _step4; !(_step4 = _iterator4()).done;) {
+                var _cell = _step4.value;
+                marked.walkTokens(_cell, callback);
+              }
+            }
+
+            break;
+          }
+
+        case 'list':
+          {
+            marked.walkTokens(token.items, callback);
+            break;
+          }
+
+        default:
+          {
+            if (token.tokens) {
+              marked.walkTokens(token.tokens, callback);
+            }
+          }
+      }
+    }
+  };
+  /**
+   * Parse Inline
+   */
+
+
+  marked.parseInline = function (src, opt) {
+    // throw error in case of non string input
+    if (typeof src === 'undefined' || src === null) {
+      throw new Error('marked.parseInline(): input parameter is undefined or null');
+    }
+
+    if (typeof src !== 'string') {
+      throw new Error('marked.parseInline(): input parameter is of type ' + Object.prototype.toString.call(src) + ', string expected');
+    }
+
+    opt = merge$2({}, marked.defaults, opt || {});
+    checkSanitizeDeprecation$1(opt);
+
+    try {
+      var tokens = Lexer_1.lexInline(src, opt);
+
+      if (opt.walkTokens) {
+        marked.walkTokens(tokens, opt.walkTokens);
+      }
+
+      return Parser_1.parseInline(tokens, opt);
+    } catch (e) {
+      e.message += '\nPlease report this to https://github.com/markedjs/marked.';
+
+      if (opt.silent) {
+        return '<p>An error occurred:</p><pre>' + escape$2(e.message + '', true) + '</pre>';
+      }
+
+      throw e;
+    }
+  };
+  /**
+   * Expose
+   */
+
+
+  marked.Parser = Parser_1;
+  marked.parser = Parser_1.parse;
+  marked.Renderer = Renderer_1;
+  marked.TextRenderer = TextRenderer_1;
+  marked.Lexer = Lexer_1;
+  marked.lexer = Lexer_1.lex;
+  marked.Tokenizer = Tokenizer_1;
+  marked.Slugger = Slugger_1;
+  marked.parse = marked;
+  var marked_1 = marked;
+
+  return marked_1;
+
+})));
+
+},{}],27:[function(require,module,exports){
 // These methods let you build a transform function from a transformComponent
 // function for OT types like JSON0 in which operations are lists of components
 // and transforming them requires N^2 work. I find it kind of nasty that I need
@@ -29120,7 +31800,7 @@ function bootstrapTransform(type, transformComponent, checkValidOp, append) {
   };
 };
 
-},{}],27:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 // Only the JSON type is exported, because the text type is deprecated
 // otherwise. (If you want to use it somewhere, you're welcome to pull it out
 // into a separate module that json0 can depend on).
@@ -29129,7 +31809,7 @@ module.exports = {
   type: require('./json0')
 };
 
-},{"./json0":28}],28:[function(require,module,exports){
+},{"./json0":29}],29:[function(require,module,exports){
 /*
  This is the implementation of the JSON OT type.
 
@@ -29794,7 +32474,7 @@ json.registerSubtype(text);
 module.exports = json;
 
 
-},{"./bootstrapTransform":26,"./text0":29}],29:[function(require,module,exports){
+},{"./bootstrapTransform":27,"./text0":30}],30:[function(require,module,exports){
 // DEPRECATED!
 //
 // This type works, but is not exported. Its included here because the JSON0
@@ -30052,7 +32732,7 @@ text.invert = function(op) {
 
 require('./bootstrapTransform')(text, transformComponent, checkValidOp, append);
 
-},{"./bootstrapTransform":26}],30:[function(require,module,exports){
+},{"./bootstrapTransform":27}],31:[function(require,module,exports){
 (function (process){
 // .dirname, .basename, and .extname methods are extracted from Node.js v8.11.1,
 // backported and transplited with Babel, with backwards-compat fixes
@@ -30359,7 +33039,7 @@ var substr = 'ab'.substr(-1) === 'b'
 
 }).call(this,require('_process'))
 
-},{"_process":32}],31:[function(require,module,exports){
+},{"_process":33}],32:[function(require,module,exports){
 (function (global){
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
@@ -32988,7 +35668,7 @@ return Popper;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
-},{}],32:[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -33174,7 +35854,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],33:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 'use strict';
 
 var replace = String.prototype.replace;
@@ -33194,7 +35874,7 @@ module.exports = {
     RFC3986: 'RFC3986'
 };
 
-},{}],34:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 'use strict';
 
 var stringify = require('./stringify');
@@ -33207,7 +35887,7 @@ module.exports = {
     stringify: stringify
 };
 
-},{"./formats":33,"./parse":35,"./stringify":36}],35:[function(require,module,exports){
+},{"./formats":34,"./parse":36,"./stringify":37}],36:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -33383,7 +36063,7 @@ module.exports = function (str, opts) {
     return utils.compact(obj);
 };
 
-},{"./utils":37}],36:[function(require,module,exports){
+},{"./utils":38}],37:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -33595,7 +36275,7 @@ module.exports = function (object, opts) {
     return joined.length > 0 ? prefix + joined : '';
 };
 
-},{"./formats":33,"./utils":37}],37:[function(require,module,exports){
+},{"./formats":34,"./utils":38}],38:[function(require,module,exports){
 'use strict';
 
 var has = Object.prototype.hasOwnProperty;
@@ -33810,7 +36490,7 @@ module.exports = {
     merge: merge
 };
 
-},{}],38:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -33896,7 +36576,7 @@ var isArray = Array.isArray || function (xs) {
   return Object.prototype.toString.call(xs) === '[object Array]';
 };
 
-},{}],39:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -33983,13 +36663,13 @@ var objectKeys = Object.keys || function (obj) {
   return res;
 };
 
-},{}],40:[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 'use strict';
 
 exports.decode = exports.parse = require('./decode');
 exports.encode = exports.stringify = require('./encode');
 
-},{"./decode":38,"./encode":39}],41:[function(require,module,exports){
+},{"./decode":39,"./encode":40}],42:[function(require,module,exports){
 var racer = require('racer');
 var Socket = require('./socket');
 var CLIENT_OPTIONS = JSON.parse('{"base":"/channel","reconnect":true,"browserChannelOnly":false,"timeout":10000,"timeoutIncrement":10000}');
@@ -33999,7 +36679,7 @@ racer.Model.prototype._createSocket = function(bundle) {
 };
 
 
-},{"./socket":42,"racer":"racer"}],42:[function(require,module,exports){
+},{"./socket":43,"racer":"racer"}],43:[function(require,module,exports){
 module.exports = Socket;
 
 var BCSocket = require('browserchannel/dist/bcsocket-uncompressed').BCSocket;
@@ -34189,7 +36869,7 @@ function getWebSocketURL(options){
 // Maybe need to use reconnection timing algorithm from
 // http://blog.johnryding.com/post/78544969349/how-to-reconnect-web-sockets-in-a-realtime-web-app
 
-},{"browserchannel/dist/bcsocket-uncompressed":4}],43:[function(require,module,exports){
+},{"browserchannel/dist/bcsocket-uncompressed":4}],44:[function(require,module,exports){
 module.exports = CollectionCounter;
 
 function CollectionCounter() {
@@ -34234,7 +36914,7 @@ CollectionCounter.prototype.toJSON = function() {
   return;
 };
 
-},{}],44:[function(require,module,exports){
+},{}],45:[function(require,module,exports){
 module.exports = Doc;
 
 function Doc(model, collectionName, id) {
@@ -34254,7 +36934,7 @@ Doc.prototype._errorMessage = function(description, segments, value) {
     JSON.stringify(value, null, 2);
 };
 
-},{}],45:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 var Doc = require('./Doc');
 var util = require('../util');
 
@@ -34478,7 +37158,7 @@ function nodeCreateArray(node, key) {
   return node;
 }
 
-},{"../util":65,"./Doc":44}],46:[function(require,module,exports){
+},{"../util":66,"./Doc":45}],47:[function(require,module,exports){
 var uuid = require('uuid');
 
 Model.INITS = [];
@@ -34526,7 +37206,7 @@ function ChildModel(model) {
 }
 ChildModel.prototype = new Model();
 
-},{"uuid":68}],47:[function(require,module,exports){
+},{"uuid":69}],48:[function(require,module,exports){
 (function (process){
 var util = require('../util');
 var Model = require('./Model');
@@ -35107,7 +37787,7 @@ function resultsIds(results) {
 
 }).call(this,require('_process'))
 
-},{"../util":65,"./Model":46,"_process":32,"sharedb/lib/client":73}],48:[function(require,module,exports){
+},{"../util":66,"./Model":47,"_process":33,"sharedb/lib/client":74}],49:[function(require,module,exports){
 /**
  * RemoteDoc adapts the ShareJS operation protocol to Racer's mutator
  * interface.
@@ -35672,7 +38352,7 @@ function defined(value) {
   return value !== undefined;
 }
 
-},{"../util":65,"./Doc":44}],49:[function(require,module,exports){
+},{"../util":66,"./Doc":45}],50:[function(require,module,exports){
 var Model = require('./Model');
 var LocalDoc = require('./LocalDoc');
 var util = require('../util');
@@ -35824,7 +38504,7 @@ function noKeys(object) {
   return true;
 }
 
-},{"../util":65,"./LocalDoc":45,"./Model":46}],50:[function(require,module,exports){
+},{"../util":66,"./LocalDoc":46,"./Model":47}],51:[function(require,module,exports){
 var Connection = require('sharedb/lib/client').Connection;
 var Model = require('./Model');
 var LocalDoc = require('./LocalDoc');
@@ -35926,7 +38606,7 @@ Model.prototype.whenNothingPending = function(cb) {
   return this.root.connection.whenNothingPending(cb);
 };
 
-},{"./LocalDoc":45,"./Model":46,"./RemoteDoc":48,"sharedb/lib/client":73}],51:[function(require,module,exports){
+},{"./LocalDoc":46,"./Model":47,"./RemoteDoc":49,"sharedb/lib/client":74}],52:[function(require,module,exports){
 /**
  * Contexts are useful for keeping track of the origin of subscribes.
  */
@@ -36066,7 +38746,7 @@ Context.prototype.unload = function() {
   this.createdDocs.reset();
 };
 
-},{"./CollectionCounter":43,"./Model":46}],52:[function(require,module,exports){
+},{"./CollectionCounter":44,"./Model":47}],53:[function(require,module,exports){
 var defaultFns = module.exports = new DefaultFns();
 
 defaultFns.reverse = new FnPair(getReverse, setReverse);
@@ -36097,7 +38777,7 @@ function desc(a, b) {
   return 0;
 }
 
-},{}],53:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 // @ts-check
 
 var EventEmitter = require('events').EventEmitter;
@@ -36620,7 +39300,7 @@ function stripRestWildcard(segments) {
   return true;
 }
 
-},{"../util":65,"./Model":46,"events":23}],54:[function(require,module,exports){
+},{"../util":66,"./Model":47,"events":23}],55:[function(require,module,exports){
 var util = require('../util');
 var Model = require('./Model');
 var defaultFns = require('./defaultFns');
@@ -36891,7 +39571,7 @@ Filter.prototype.destroy = function() {
   this.model._del(this.idsSegments);
 };
 
-},{"../util":65,"./Model":46,"./defaultFns":52}],55:[function(require,module,exports){
+},{"../util":66,"./Model":47,"./defaultFns":53}],56:[function(require,module,exports){
 (function (process){
 var util = require('../util');
 var Model = require('./Model');
@@ -37139,7 +39819,7 @@ Fn.prototype._setValue = function(model, segments, value) {
 
 }).call(this,require('_process'))
 
-},{"../util":65,"./Model":46,"./defaultFns":52,"_process":32}],56:[function(require,module,exports){
+},{"../util":66,"./Model":47,"./defaultFns":53,"_process":33}],57:[function(require,module,exports){
 module.exports = require('./Model');
 var util = require('../util');
 
@@ -37165,7 +39845,7 @@ require('./ref');
 util.serverRequire(module, './bundle');
 util.serverRequire(module, './connection.server');
 
-},{"../util":65,"./Model":46,"./Query":47,"./collections":49,"./connection":50,"./contexts":51,"./events":53,"./filter":54,"./fn":55,"./mutators":57,"./paths":58,"./ref":59,"./refList":60,"./setDiff":61,"./subscriptions":62,"./unbundle":63}],57:[function(require,module,exports){
+},{"../util":66,"./Model":47,"./Query":48,"./collections":50,"./connection":51,"./contexts":52,"./events":54,"./filter":55,"./fn":56,"./mutators":58,"./paths":59,"./ref":60,"./refList":61,"./setDiff":62,"./subscriptions":63,"./unbundle":64}],58:[function(require,module,exports){
 var util = require('../util');
 var Model = require('./Model');
 
@@ -37891,7 +40571,7 @@ Model.prototype._subtypeSubmit = function(segments, subtype, subtypeOp, cb) {
   return this._mutate(segments, subtypeSubmit, cb);
 };
 
-},{"../util":65,"./Model":46}],58:[function(require,module,exports){
+},{"../util":66,"./Model":47}],59:[function(require,module,exports){
 var Model = require('./Model');
 
 exports.mixin = {};
@@ -37987,7 +40667,7 @@ Model.prototype.leaf = function(path) {
   return path.slice(i + 1);
 };
 
-},{"./Model":46}],59:[function(require,module,exports){
+},{"./Model":47}],60:[function(require,module,exports){
 var util = require('../util');
 var Model = require('./Model');
 
@@ -38322,7 +41002,7 @@ function listMapRemove(map, name, item) {
   if (!items.length) delete map[name];
 }
 
-},{"../util":65,"./Model":46}],60:[function(require,module,exports){
+},{"../util":66,"./Model":47}],61:[function(require,module,exports){
 var util = require('../util');
 var Model = require('./Model');
 
@@ -38808,7 +41488,7 @@ RefLists.prototype.toJSON = function() {
   return out;
 };
 
-},{"../util":65,"./Model":46}],61:[function(require,module,exports){
+},{"../util":66,"./Model":47}],62:[function(require,module,exports){
 var util = require('../util');
 var Model = require('./Model');
 var arrayDiff = require('arraydiff');
@@ -38979,7 +41659,7 @@ Model.prototype._applyArrayDiff = function(segments, diff, cb) {
   return this._mutate(segments, applyArrayDiff, cb);
 };
 
-},{"../util":65,"./Model":46,"arraydiff":1}],62:[function(require,module,exports){
+},{"../util":66,"./Model":47,"arraydiff":1}],63:[function(require,module,exports){
 (function (process){
 var util = require('../util');
 var Model = require('./Model');
@@ -39205,7 +41885,7 @@ Model.prototype._hasDocReferences = function(collectionName, id) {
 
 }).call(this,require('_process'))
 
-},{"../util":65,"./CollectionCounter":43,"./Model":46,"./Query":47,"_process":32}],63:[function(require,module,exports){
+},{"../util":66,"./CollectionCounter":44,"./Model":47,"./Query":48,"_process":33}],64:[function(require,module,exports){
 var Model = require('./Model');
 
 Model.prototype.unbundle = function(data) {
@@ -39281,7 +41961,7 @@ Model.prototype.unbundle = function(data) {
   }
 };
 
-},{"./Model":46}],64:[function(require,module,exports){
+},{"./Model":47}],65:[function(require,module,exports){
 var EventEmitter = require('events').EventEmitter;
 var Model = require('./Model');
 var util = require('./util');
@@ -39313,7 +41993,7 @@ Racer.prototype.createModel = function(data) {
 
 util.serverRequire(module, './Racer.server');
 
-},{"./Model":56,"./util":65,"events":23}],65:[function(require,module,exports){
+},{"./Model":57,"./util":66,"events":23}],66:[function(require,module,exports){
 (function (process){
 var deepEqual = require('fast-deep-equal');
 
@@ -39503,7 +42183,7 @@ function use(plugin, options) {
 
 }).call(this,require('_process'))
 
-},{"_process":32,"fast-deep-equal":66}],66:[function(require,module,exports){
+},{"_process":33,"fast-deep-equal":67}],67:[function(require,module,exports){
 'use strict';
 
 var isArray = Array.isArray;
@@ -39560,7 +42240,7 @@ module.exports = function equal(a, b) {
   return a!==a && b!==b;
 };
 
-},{}],67:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 (function (global){
 
 var rng;
@@ -39597,7 +42277,7 @@ module.exports = rng;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
-},{}],68:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 //     uuid.js
 //
 //     Copyright (c) 2010-2012 Robert Kieffer
@@ -39782,7 +42462,7 @@ uuid.unparse = unparse;
 
 module.exports = uuid;
 
-},{"./rng":67}],69:[function(require,module,exports){
+},{"./rng":68}],70:[function(require,module,exports){
 if (typeof require === 'function') {
   var serializeObject = require('serialize-object');
 }
@@ -41134,7 +43814,7 @@ function normalizeLineBreaks(string) {
   }
 })();
 
-},{"serialize-object":70}],70:[function(require,module,exports){
+},{"serialize-object":71}],71:[function(require,module,exports){
 exports.instance = serializeInstance;
 exports.args = serializeArgs;
 exports.value = serializeValue;
@@ -41205,7 +43885,7 @@ function formatString(value) {
   return '\'' + escaped + '\'';
 }
 
-},{}],71:[function(require,module,exports){
+},{}],72:[function(require,module,exports){
 (function (process){
 var Doc = require('./doc');
 var Query = require('./query');
@@ -42004,7 +44684,7 @@ Connection.prototype._handlePresenceRequest = function(error, message) {
 
 }).call(this,require('_process'))
 
-},{"../emitter":84,"../error":85,"../logger":86,"../types":90,"../util":91,"./doc":72,"./presence/doc-presence":74,"./presence/presence":77,"./query":80,"./snapshot-request/snapshot-timestamp-request":82,"./snapshot-request/snapshot-version-request":83,"_process":32}],72:[function(require,module,exports){
+},{"../emitter":85,"../error":86,"../logger":87,"../types":91,"../util":92,"./doc":73,"./presence/doc-presence":75,"./presence/presence":78,"./query":81,"./snapshot-request/snapshot-timestamp-request":83,"./snapshot-request/snapshot-version-request":84,"_process":33}],73:[function(require,module,exports){
 (function (process){
 var emitter = require('../emitter');
 var logger = require('../logger');
@@ -43008,7 +45688,7 @@ Doc.prototype._clearInflightOp = function(err) {
 
 }).call(this,require('_process'))
 
-},{"../emitter":84,"../error":85,"../logger":86,"../types":90,"../util":91,"_process":32}],73:[function(require,module,exports){
+},{"../emitter":85,"../error":86,"../logger":87,"../types":91,"../util":92,"_process":33}],74:[function(require,module,exports){
 exports.Connection = require('./connection');
 exports.Doc = require('./doc');
 exports.Error = require('../error');
@@ -43016,7 +45696,7 @@ exports.Query = require('./query');
 exports.types = require('../types');
 exports.logger = require('../logger');
 
-},{"../error":85,"../logger":86,"../types":90,"./connection":71,"./doc":72,"./query":80}],74:[function(require,module,exports){
+},{"../error":86,"../logger":87,"../types":91,"./connection":72,"./doc":73,"./query":81}],75:[function(require,module,exports){
 var Presence = require('./presence');
 var LocalDocPresence = require('./local-doc-presence');
 var RemoteDocPresence = require('./remote-doc-presence');
@@ -43044,7 +45724,7 @@ DocPresence.prototype._createRemotePresence = function(id) {
   return new RemoteDocPresence(this, id);
 };
 
-},{"./local-doc-presence":75,"./presence":77,"./remote-doc-presence":78}],75:[function(require,module,exports){
+},{"./local-doc-presence":76,"./presence":78,"./remote-doc-presence":79}],76:[function(require,module,exports){
 var LocalPresence = require('./local-presence');
 var ShareDBError = require('../../error');
 var ERROR_CODE = ShareDBError.CODES;
@@ -43160,7 +45840,7 @@ LocalDocPresence.prototype._message = function() {
   return message;
 };
 
-},{"../../error":85,"./local-presence":76}],76:[function(require,module,exports){
+},{"../../error":86,"./local-presence":77}],77:[function(require,module,exports){
 (function (process){
 var emitter = require('../../emitter');
 
@@ -43243,7 +45923,7 @@ LocalPresence.prototype._callbackOrEmit = function(error, callback) {
 
 }).call(this,require('_process'))
 
-},{"../../emitter":84,"_process":32}],77:[function(require,module,exports){
+},{"../../emitter":85,"_process":33}],78:[function(require,module,exports){
 (function (process){
 var emitter = require('../../emitter');
 var LocalPresence = require('./local-presence');
@@ -43419,7 +46099,7 @@ Presence.prototype._callEachOrEmit = function(callbacks, error) {
 
 }).call(this,require('_process'))
 
-},{"../../emitter":84,"../../util":91,"./local-presence":76,"./remote-presence":79,"_process":32,"async":2,"hat":24}],78:[function(require,module,exports){
+},{"../../emitter":85,"../../util":92,"./local-presence":77,"./remote-presence":80,"_process":33,"async":2,"hat":24}],79:[function(require,module,exports){
 var RemotePresence = require('./remote-presence');
 var ot = require('../../ot');
 
@@ -43572,7 +46252,7 @@ RemoteDocPresence.prototype._cacheOp = function(op, isOwnOp) {
   }
 };
 
-},{"../../ot":88,"./remote-presence":79}],79:[function(require,module,exports){
+},{"../../ot":89,"./remote-presence":80}],80:[function(require,module,exports){
 (function (process){
 module.exports = RemotePresence;
 function RemotePresence(presence, presenceId) {
@@ -43599,7 +46279,7 @@ RemotePresence.prototype.destroy = function(callback) {
 
 }).call(this,require('_process'))
 
-},{"_process":32}],80:[function(require,module,exports){
+},{"_process":33}],81:[function(require,module,exports){
 (function (process){
 var emitter = require('../emitter');
 
@@ -43802,7 +46482,7 @@ Query.prototype._handleExtra = function(extra) {
 
 }).call(this,require('_process'))
 
-},{"../emitter":84,"_process":32}],81:[function(require,module,exports){
+},{"../emitter":85,"_process":33}],82:[function(require,module,exports){
 var Snapshot = require('../../snapshot');
 var emitter = require('../../emitter');
 
@@ -43858,7 +46538,7 @@ SnapshotRequest.prototype._handleResponse = function(error, message) {
   this.callback(null, snapshot);
 };
 
-},{"../../emitter":84,"../../snapshot":89}],82:[function(require,module,exports){
+},{"../../emitter":85,"../../snapshot":90}],83:[function(require,module,exports){
 var SnapshotRequest = require('./snapshot-request');
 var util = require('../../util');
 
@@ -43886,7 +46566,7 @@ SnapshotTimestampRequest.prototype._message = function() {
   };
 };
 
-},{"../../util":91,"./snapshot-request":81}],83:[function(require,module,exports){
+},{"../../util":92,"./snapshot-request":82}],84:[function(require,module,exports){
 var SnapshotRequest = require('./snapshot-request');
 var util = require('../../util');
 
@@ -43914,7 +46594,7 @@ SnapshotVersionRequest.prototype._message = function() {
   };
 };
 
-},{"../../util":91,"./snapshot-request":81}],84:[function(require,module,exports){
+},{"../../util":92,"./snapshot-request":82}],85:[function(require,module,exports){
 var EventEmitter = require('events').EventEmitter;
 
 exports.EventEmitter = EventEmitter;
@@ -43926,7 +46606,7 @@ function mixin(Constructor) {
   }
 }
 
-},{"events":23}],85:[function(require,module,exports){
+},{"events":23}],86:[function(require,module,exports){
 function ShareDBError(code, message) {
   this.code = code;
   this.message = message || '';
@@ -43999,12 +46679,12 @@ ShareDBError.CODES = {
 
 module.exports = ShareDBError;
 
-},{}],86:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 var Logger = require('./logger');
 var logger = new Logger();
 module.exports = logger;
 
-},{"./logger":87}],87:[function(require,module,exports){
+},{"./logger":88}],88:[function(require,module,exports){
 var SUPPORTED_METHODS = [
   'info',
   'warn',
@@ -44032,7 +46712,7 @@ Logger.prototype.setMethods = function(overrides) {
   });
 };
 
-},{}],88:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 // This contains the master OT functions for the database. They look like
 // ot-types style operational transform functions, but they're a bit different.
 // These functions understand versions and can deal with out of bound create &
@@ -44252,7 +46932,7 @@ exports.transformPresence = function(presence, op, isOwnOp) {
   presence.v++;
 };
 
-},{"./error":85,"./types":90,"./util":91}],89:[function(require,module,exports){
+},{"./error":86,"./types":91,"./util":92}],90:[function(require,module,exports){
 module.exports = Snapshot;
 function Snapshot(id, version, type, data, meta) {
   this.id = id;
@@ -44262,7 +46942,7 @@ function Snapshot(id, version, type, data, meta) {
   this.m = meta;
 }
 
-},{}],90:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 
 exports.defaultType = require('ot-json0').type;
 
@@ -44275,7 +46955,7 @@ exports.register = function(type) {
 
 exports.register(exports.defaultType);
 
-},{"ot-json0":27}],91:[function(require,module,exports){
+},{"ot-json0":28}],92:[function(require,module,exports){
 
 exports.doNothing = doNothing;
 function doNothing() {}
@@ -44360,7 +47040,7 @@ exports.truthy = function(arg) {
   return !!arg;
 };
 
-},{}],92:[function(require,module,exports){
+},{}],93:[function(require,module,exports){
 (function (setImmediate,clearImmediate){
 var nextTick = require('process/browser.js').nextTick;
 var apply = Function.prototype.apply;
@@ -44440,7 +47120,7 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
 };
 }).call(this,require("timers").setImmediate,require("timers").clearImmediate)
 
-},{"process/browser.js":32,"timers":92}],93:[function(require,module,exports){
+},{"process/browser.js":33,"timers":93}],94:[function(require,module,exports){
 var qs = require('qs')
 var parseUrl = require('url').parse
 var resolveUrl = require('url').resolve
@@ -44680,7 +47360,7 @@ function addListeners(history) {
   window.addEventListener('popstate', onPopState, true)
 }
 
-},{"./router":95,"qs":34,"url":98}],94:[function(require,module,exports){
+},{"./router":96,"qs":35,"url":99}],95:[function(require,module,exports){
 var Route = require('../vendor/express/router/route')
 var History = require('./History')
 var router = module.exports = require('./router')
@@ -44735,7 +47415,7 @@ function setup(app) {
   })
 }
 
-},{"../vendor/express/router/route":96,"./History":93,"./router":95}],95:[function(require,module,exports){
+},{"../vendor/express/router/route":97,"./History":94,"./router":96}],96:[function(require,module,exports){
 var qs = require('qs')
 var nodeUrl = require('url');
 
@@ -44878,7 +47558,7 @@ RenderReq.prototype.routeParams = function(route) {
   return params
 }
 
-},{"qs":34,"url":98}],96:[function(require,module,exports){
+},{"qs":35,"url":99}],97:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -44952,7 +47632,7 @@ Route.prototype.match = function(path){
   return true;
 };
 
-},{"../utils":97}],97:[function(require,module,exports){
+},{"../utils":98}],98:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -45264,7 +47944,7 @@ exports.pathRegexp = function(path, keys, sensitive, strict) {
   return new RegExp('^' + path + '$', sensitive ? '' : 'i');
 }
 
-},{}],98:[function(require,module,exports){
+},{}],99:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -45998,7 +48678,7 @@ Url.prototype.parseHost = function() {
   if (host) this.hostname = host;
 };
 
-},{"./util":99,"punycode":5,"querystring":40}],99:[function(require,module,exports){
+},{"./util":100,"punycode":5,"querystring":41}],100:[function(require,module,exports){
 'use strict';
 
 module.exports = {
@@ -46016,7 +48696,7 @@ module.exports = {
   }
 };
 
-},{}],100:[function(require,module,exports){
+},{}],101:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.initializeModels = exports.initializeComponents = void 0;
@@ -46027,7 +48707,7 @@ exports.initializeComponents = function (derbyApp, components) {
 };
 exports.initializeModels = function () { };
 
-},{}],101:[function(require,module,exports){
+},{}],102:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -46050,42 +48730,145 @@ var CellOptions = /** @class */ (function () {
     }
     return CellOptions;
 }());
-var CellComponent = /** @class */ (function (_super) {
-    __extends(CellComponent, _super);
-    function CellComponent() {
+var EditCellComponent = /** @class */ (function (_super) {
+    __extends(EditCellComponent, _super);
+    function EditCellComponent() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    CellComponent.prototype.init = function () {
+    EditCellComponent.prototype.init = function () {
+        // Attributes passed from section
+        this.data = this.model.ref('data', this.model.at('cell.data'));
+        this.type = this.model.ref('type', this.model.at('cell.type'));
+        this.width = this.model.ref('width', this.model.at('cell.width'));
+        this.index = this.model.at('index');
+        // Cell Options
         this.editing = this.model.at('editing');
     };
-    CellComponent.prototype.create = function () {
+    EditCellComponent.prototype.create = function () {
         this.cell = document.getElementById("cell-" + this.id);
         this.editor = this.cell.querySelector('textarea');
     };
-    CellComponent.prototype.toggleEditMode = function () {
+    EditCellComponent.prototype.toggleEditMode = function () {
         this.editing.set(!this.editing.get());
         if (!this.editing.get())
             this.cell.focus();
         else
             this.editor.focus();
     };
-    CellComponent.prototype.handleKeyDown = function (event, element, index) {
+    EditCellComponent.prototype.handleKeyDown = function (event, element) {
+        // TODO: Tab to indent
         var editing = this.editing.get();
         if (event.key === 'i' && event.ctrlKey) {
             this.toggleEditMode();
         }
         else if (!editing) {
-            this.parent.handleCellKeyDown(event, index);
+            this.parent.handleCellKeyDown(event, this.index.get());
         }
     };
-    CellComponent.view = '/home/aananth/dev/NoteD/views/editor/Components/cell.html';
-    CellComponent.DataConstructor = CellOptions;
-    CellComponent.is = 'editor-cell';
-    return CellComponent;
+    EditCellComponent.view = '/home/aananth/dev/DeNote/views/editor/Components/editCell.html';
+    EditCellComponent.DataConstructor = CellOptions;
+    EditCellComponent.is = 'editor:edit-cell';
+    return EditCellComponent;
 }(derby_1.Component));
-exports.default = CellComponent;
+exports.default = EditCellComponent;
 
-},{"derby":"derby"}],102:[function(require,module,exports){
+},{"derby":"derby"}],103:[function(require,module,exports){
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var derby_1 = require("derby");
+var NoteData = /** @class */ (function () {
+    function NoteData() {
+    }
+    return NoteData;
+}());
+var EditNoteComponent = /** @class */ (function (_super) {
+    __extends(EditNoteComponent, _super);
+    function EditNoteComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    EditNoteComponent.prototype.init = function () {
+        this.sections = this.model.ref('sections', this.model.scope('note._3.sections'));
+    };
+    EditNoteComponent.prototype.create = function () {
+        this.note = document.getElementById('note-' + this.id);
+    };
+    EditNoteComponent.prototype.swap = function (event, i0, i1) {
+        // this.model.move('cells', i0, i1);
+        // // @ts-ignore
+        // this.Note.children[i0 * 2].focus();
+        // event.stopPropagation();
+    };
+    EditNoteComponent.prototype.addSection = function (sectionIndex) {
+        this.sections.insert(sectionIndex + 1, [{ cells: [{ width: 1, data: '', type: 'text' }] }]);
+        // @ts-ignore
+        this.note.children[(sectionIndex + 1) * 2].children[0].focus();
+    };
+    EditNoteComponent.prototype.removeSection = function (sectionIndex) {
+        var numSections = this.sections.get().length;
+        if (numSections > 1) {
+            this.sections.remove(sectionIndex);
+            var focus_1 = sectionIndex;
+            if (sectionIndex == numSections - 1)
+                focus_1 = sectionIndex - 1;
+            // @ts-ignore
+            this.note.children[focus_1 * 2].children[0].focus();
+        }
+    };
+    EditNoteComponent.prototype.focusSection = function (event, sectionIndex, cellIndex) {
+        if (cellIndex === void 0) { cellIndex = 0; }
+        var numSections = this.sections.get().length;
+        var sectionId = ((sectionIndex + numSections) % numSections);
+        var cellId = Math.min(cellIndex, this.sections.at(sectionId + ".cells").get().length - 1);
+        // @ts-ignore
+        this.note.children[sectionId * 2].children[cellId * 2].focus();
+        event.preventDefault();
+    };
+    EditNoteComponent.prototype.handleSectionKeyDown = function (event, sectionIndex, cellIndex) {
+        var numSections = this.sections.get().length;
+        switch (event.key) {
+            case 'ArrowUp':
+                // ArrowUp: Move to Section Above
+                if (!event.ctrlKey && !event.shiftKey && sectionIndex > 0)
+                    this.focusSection(event, sectionIndex - 1, cellIndex);
+                break;
+            case 'ArrowDown':
+                // ArrowDown: Move to Section Below
+                if (!event.ctrlKey && !event.shiftKey && sectionIndex < numSections - 1)
+                    this.focusSection(event, sectionIndex + 1, cellIndex);
+                break;
+            case 'Enter':
+                // Ctrl + Shift + Enter: Add Section Below
+                if (!event.ctrlKey && event.shiftKey)
+                    this.addSection(sectionIndex);
+                break;
+            case 'Delete':
+                // Ctrl + Shift + Delete: Remove Section
+                if (!event.ctrlKey && event.shiftKey)
+                    this.removeSection(sectionIndex);
+                break;
+        }
+    };
+    EditNoteComponent.view = '/home/aananth/dev/DeNote/views/editor/Components/editNote.html';
+    EditNoteComponent.DataConstructor = NoteData;
+    EditNoteComponent.is = 'editor:edit-note';
+    return EditNoteComponent;
+}(derby_1.Component));
+exports.default = EditNoteComponent;
+
+},{"derby":"derby"}],104:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -46107,113 +48890,250 @@ var SectionData = /** @class */ (function () {
     }
     return SectionData;
 }());
-var SectionComponent = /** @class */ (function (_super) {
-    __extends(SectionComponent, _super);
-    function SectionComponent() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.resize = {
-            started: false,
-            startX: 0,
-            index: 0
-        };
-        return _this;
+var EditSectionComponent = /** @class */ (function (_super) {
+    __extends(EditSectionComponent, _super);
+    function EditSectionComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    SectionComponent.prototype.init = function () {
-        this.cells = this.model.ref('cells', this.model.scope('section._6.cells'));
+    EditSectionComponent.prototype.init = function () {
+        // Attributes from note
+        this.cells = this.model.ref('cells', this.model.at('section.cells'));
+        this.index = this.model.at('index');
     };
-    SectionComponent.prototype.create = function () {
+    EditSectionComponent.prototype.create = function () {
         this.section = document.getElementById('section-' + this.id);
     };
-    SectionComponent.prototype.getGridX = function (x) {
-        var rect = this.section.getBoundingClientRect();
-        return Math.floor((this.cells.get().length * 11 - 1) * (x - rect.left) / rect.width);
-    };
-    SectionComponent.prototype.swap = function (event, i0, i1) {
+    EditSectionComponent.prototype.swap = function (event, i0, i1) {
         this.model.move('cells', i0, i1);
         // @ts-ignore
         this.section.children[i0 * 2].focus();
         event.stopPropagation();
     };
-    SectionComponent.prototype.incrementWidth = function (i0, i1, increment) {
+    EditSectionComponent.prototype.incrementWidth = function (i0, i1, increment) {
         if (increment === void 0) { increment = 0.1; }
         if (this.cells.get()[i0].width >= 1.5 || this.cells.get()[i1].width <= 0.5)
             return;
         this.model.increment("cells." + i0 + ".width", increment);
         this.model.increment("cells." + i1 + ".width", -increment);
     };
-    SectionComponent.prototype.addCell = function (index) {
+    EditSectionComponent.prototype.addCell = function (cellIndex) {
         // TODO: use constant
         var MAX_CELLS = 5;
         if (this.cells.get().length < MAX_CELLS) {
-            this.cells.insert(index + 1, [{ width: 1, data: '', type: 'text' }]);
+            this.cells.insert(cellIndex + 1, [{ width: 1, data: '', type: 'text' }]);
             // @ts-ignore
-            this.section.children[(index + 1) * 2].focus();
+            this.section.children[(cellIndex + 1) * 2].focus();
         }
     };
-    SectionComponent.prototype.removeCell = function (index) {
+    EditSectionComponent.prototype.removeCell = function (cellIndex) {
         var numCells = this.cells.get().length;
         if (numCells > 1) {
-            this.cells.remove(index);
-            var focus_1 = index;
-            if (index == numCells - 1)
-                focus_1 = index - 1;
+            this.cells.remove(cellIndex);
+            var focus_1 = cellIndex;
+            if (cellIndex == numCells - 1)
+                focus_1 = cellIndex - 1;
             // @ts-ignore
             this.section.children[focus_1 * 2].focus();
         }
     };
-    SectionComponent.prototype.handleCellKeyDown = function (event, index) {
+    EditSectionComponent.prototype.focusCell = function (cellIndex) {
+        var numCells = this.cells.get().length;
+        // @ts-ignore
+        this.section.children[((cellIndex + numCells) % numCells) * 2].focus();
+    };
+    EditSectionComponent.prototype.handleCellKeyDown = function (event, cellIndex) {
         var numCells = this.cells.get().length;
         switch (event.key) {
             case 'ArrowRight':
                 // Ctrl + Shift + RightArrow: Decrease Width Left
-                if (event.ctrlKey && event.shiftKey && index > 0)
-                    this.incrementWidth(index - 1, index);
+                if (event.ctrlKey && event.shiftKey && cellIndex > 0)
+                    this.incrementWidth(cellIndex - 1, cellIndex);
                 // Ctrl + RightArrow: Increase Width Right
-                else if (event.ctrlKey && !event.shiftKey && index < numCells - 1)
-                    this.incrementWidth(index, index + 1);
+                else if (event.ctrlKey && !event.shiftKey && cellIndex < numCells - 1)
+                    this.incrementWidth(cellIndex, cellIndex + 1);
                 // Shift + RightArrow: Swap with right cell
-                else if (!event.ctrlKey && event.shiftKey && index < numCells - 1)
-                    this.swap(event, index, index + 1);
+                else if (!event.ctrlKey && event.shiftKey && cellIndex < numCells - 1)
+                    this.swap(event, cellIndex, cellIndex + 1);
                 // Right Arrow: Move to Right Cell (Loop)
-                // @ts-ignore
                 else if (!event.ctrlKey && !event.shiftKey)
-                    this.section.children[((index + numCells + 1) % numCells) * 2].focus();
+                    this.focusCell(cellIndex + 1);
                 break;
             case 'ArrowLeft':
                 // Ctrl + Shift + LeftArrow: Decrease Width Right
-                if (event.ctrlKey && event.shiftKey && index < numCells - 1)
-                    this.incrementWidth(index + 1, index);
+                if (event.ctrlKey && event.shiftKey && cellIndex < numCells - 1)
+                    this.incrementWidth(cellIndex + 1, cellIndex);
                 // Ctrl + LeftArrow: Increase Width Left
-                else if (event.ctrlKey && !event.shiftKey && index > 0)
-                    this.incrementWidth(index, index - 1);
+                else if (event.ctrlKey && !event.shiftKey && cellIndex > 0)
+                    this.incrementWidth(cellIndex, cellIndex - 1);
                 // Shift + LeftArrow: Swap with left cell
-                else if (!event.ctrlKey && event.shiftKey && index > 0)
-                    this.swap(event, index, index - 1);
+                else if (!event.ctrlKey && event.shiftKey && cellIndex > 0)
+                    this.swap(event, cellIndex, cellIndex - 1);
                 // LeftArrow: Move to Left Cell (Loop)
-                // @ts-ignore
                 else if (!event.ctrlKey && !event.shiftKey)
-                    this.section.children[((index + numCells - 1) % numCells) * 2].focus();
+                    this.focusCell(cellIndex - 1);
                 break;
             case 'Enter':
                 // Ctrl + Enter: Insert Cell to the Right
-                if (event.ctrlKey)
-                    this.addCell(index);
+                if (event.ctrlKey && !event.shiftKey)
+                    this.addCell(cellIndex);
                 break;
             case "Delete":
                 // Ctrl + Delete: Delete Current Cell
-                if (event.ctrlKey)
-                    this.removeCell(index);
+                if (event.ctrlKey && !event.shiftKey)
+                    this.removeCell(cellIndex);
                 break;
         }
+        this.parent.handleSectionKeyDown(event, this.index.get(), cellIndex);
     };
-    SectionComponent.view = '/home/aananth/dev/NoteD/views/editor/Components/section.html';
-    SectionComponent.DataConstructor = SectionData;
-    SectionComponent.is = 'editor-section';
-    return SectionComponent;
+    EditSectionComponent.view = '/home/aananth/dev/DeNote/views/editor/Components/editSection.html';
+    EditSectionComponent.DataConstructor = SectionData;
+    EditSectionComponent.is = 'editor:edit-section';
+    return EditSectionComponent;
 }(derby_1.Component));
-exports.default = SectionComponent;
+exports.default = EditSectionComponent;
 
-},{"derby":"derby"}],103:[function(require,module,exports){
+},{"derby":"derby"}],105:[function(require,module,exports){
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var derby_1 = require("derby");
+var marked_1 = __importDefault(require("marked"));
+var CellOptions = /** @class */ (function () {
+    function CellOptions() {
+        // editing: boolean = false;
+        this.data = '';
+        this.type = '';
+        this.width = 1;
+        this.index = 0;
+    }
+    return CellOptions;
+}());
+var RenderCellComponent = /** @class */ (function (_super) {
+    __extends(RenderCellComponent, _super);
+    function RenderCellComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    RenderCellComponent.prototype.init = function () {
+        // Attributes passed from section
+        this.data = this.model.ref('data', this.model.at('cell.data'));
+        this.type = this.model.ref('type', this.model.at('cell.type'));
+        this.width = this.model.ref('width', this.model.at('cell.width'));
+        this.index = this.model.at('index');
+    };
+    RenderCellComponent.prototype.create = function () {
+        this.cell = document.getElementById("cell-" + this.id);
+        // Set Up reactive markdown rendering
+        this.model.start('markdownData', this.data, this.getMarkdown);
+    };
+    RenderCellComponent.prototype.getMarkdown = function (data) {
+        // TODO: Sanitize html;
+        return marked_1.default(data);
+    };
+    RenderCellComponent.view = '/home/aananth/dev/DeNote/views/editor/Components/renderCell.html';
+    RenderCellComponent.DataConstructor = CellOptions;
+    RenderCellComponent.is = 'editor:render-cell';
+    return RenderCellComponent;
+}(derby_1.Component));
+exports.default = RenderCellComponent;
+
+},{"derby":"derby","marked":26}],106:[function(require,module,exports){
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var derby_1 = require("derby");
+var NoteData = /** @class */ (function () {
+    function NoteData() {
+    }
+    return NoteData;
+}());
+var RenderNoteComponent = /** @class */ (function (_super) {
+    __extends(RenderNoteComponent, _super);
+    function RenderNoteComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    RenderNoteComponent.prototype.init = function () {
+        this.sections = this.model.ref('sections', this.model.scope('note._3.sections'));
+    };
+    RenderNoteComponent.prototype.create = function () {
+        this.note = document.getElementById('note-' + this.id);
+    };
+    RenderNoteComponent.view = '/home/aananth/dev/DeNote/views/editor/Components/renderNote.html';
+    RenderNoteComponent.DataConstructor = NoteData;
+    RenderNoteComponent.is = 'editor:render-note';
+    return RenderNoteComponent;
+}(derby_1.Component));
+exports.default = RenderNoteComponent;
+
+},{"derby":"derby"}],107:[function(require,module,exports){
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var derby_1 = require("derby");
+var SectionData = /** @class */ (function () {
+    function SectionData() {
+    }
+    return SectionData;
+}());
+var RenderSection = /** @class */ (function (_super) {
+    __extends(RenderSection, _super);
+    function RenderSection() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    RenderSection.prototype.init = function () {
+        // Attributes from note
+        this.cells = this.model.ref('cells', this.model.at('section.cells'));
+        this.index = this.model.at('index');
+    };
+    RenderSection.prototype.create = function () {
+        this.section = document.getElementById('section-' + this.id);
+    };
+    RenderSection.view = '/home/aananth/dev/DeNote/views/editor/Components/renderSection.html';
+    RenderSection.DataConstructor = SectionData;
+    RenderSection.is = 'editor:render-section';
+    return RenderSection;
+}(derby_1.Component));
+exports.default = RenderSection;
+
+},{"derby":"derby"}],108:[function(require,module,exports){
 (function (__filename){
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
@@ -46223,17 +49143,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var derby_1 = __importDefault(require("derby"));
 // import DerbyApplication from '../base';
 // import models from './Models';
-var cell_1 = __importDefault(require("./Components/cell"));
-var section_1 = __importDefault(require("./Components/section"));
+var editCell_1 = __importDefault(require("./Components/editCell"));
+var editSection_1 = __importDefault(require("./Components/editSection"));
+var editNote_1 = __importDefault(require("./Components/editNote"));
+var renderCell_1 = __importDefault(require("./Components/renderCell"));
+var renderSection_1 = __importDefault(require("./Components/renderSection"));
+var renderNote_1 = __importDefault(require("./Components/renderNote"));
 var application_1 = require("../base/application");
 var components = [
-    cell_1.default,
-    section_1.default
+    editCell_1.default,
+    editSection_1.default,
+    editNote_1.default,
+    renderCell_1.default,
+    renderSection_1.default,
+    renderNote_1.default
 ];
 var app = derby_1.default.createApp('editor', __filename);
 application_1.initializeComponents(app, components);
-app.loadViews('/home/aananth/dev/NoteD/views/editor/Pages');
-app.loadStyles('/home/aananth/dev/NoteD/views/editor/Styles');
+app.loadViews('/home/aananth/dev/DeNote/views/editor/Pages');
+app.loadStyles('/home/aananth/dev/DeNote/views/editor/Styles');
 if (derby_1.default.util.isServer) {
     var boostrap = require.resolve('bootstrap/dist/css/bootstrap.min.css');
     app.loadStyles(boostrap);
@@ -46245,7 +49173,7 @@ exports.default = app;
 
 }).call(this,"/src/Apps/editor/editor.ts")
 
-},{"../base/application":100,"./Components/cell":101,"./Components/section":102,"bootstrap":3,"derby":"derby"}],"derby":[function(require,module,exports){
+},{"../base/application":101,"./Components/editCell":102,"./Components/editNote":103,"./Components/editSection":104,"./Components/renderCell":105,"./Components/renderNote":106,"./Components/renderSection":107,"bootstrap":3,"derby":"derby"}],"derby":[function(require,module,exports){
 var serverRequire = require('racer').util.serverRequire;
 var Derby = serverRequire(module, './lib/DerbyForServer') || require('./lib/Derby');
 module.exports = new Derby();
@@ -46254,6 +49182,6 @@ module.exports = new Derby();
 var Racer = require('./Racer');
 module.exports = new Racer();
 
-},{"./Racer":64}]},{},[41,103])
+},{"./Racer":65}]},{},[42,108])
 
-//# sourceMappingURL=/derby/editor-98e8f1b6f0690c68dfa56aa47689bc9f.map.json
+//# sourceMappingURL=/derby/editor-2a47955a397f507a9e46a378da2eb372.map.json
