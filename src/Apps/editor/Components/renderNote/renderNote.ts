@@ -6,7 +6,7 @@ class NoteData {
 }
 
 class RenderNoteComponent extends Component<NoteData> {
-    static view = '/home/aananth/dev/DeNote/views/editor/Components/renderNote.html';
+    static view = __dirname + '/renderNote.html';
     static DataConstructor = NoteData;
     static is = 'editor:render-note';
 

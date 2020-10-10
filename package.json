@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ts-node --files src/server.ts",
     "start": "ts-node dist/server.js",
-    "build": "tsc -p ."
+    "build": "tsc -p . && npm run copyfiles",
+    "copyfiles": "copyfiles -u 1 src/**/*.html src/**/*.css dist"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +37,7 @@
     "class-validator": "^0.12.2",
     "config": "^3.3.1",
     "connect-mongo": "^3.2.0",
+    "copyfiles": "^2.4.0",
     "cors": "^2.8.5",
     "derby": "^0.10.29",
     "derby-debug": "^0.1.0",

@@ -112,7 +112,7 @@ class App {
 
     public pushApps() {
         this.derbyApps.forEach(app => {
-            app.derbyApp.writeScripts(this.backend, '/home/aananth/dev/DeNote/public', {}, (err) => {
+            app.derbyApp.writeScripts(this.backend, path.join(__dirname, "..", "public"), {}, (err) => {
                 if (err) console.log(err);
             });
         })

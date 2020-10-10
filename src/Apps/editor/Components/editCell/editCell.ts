@@ -5,7 +5,7 @@ class CellOptions {
 }
 
 class EditCellComponent extends Component {
-    static view = '/home/aananth/dev/DeNote/views/editor/Components/editCell.html';
+    static view = __dirname + '/editCell.html';
     static DataConstructor = CellOptions;
     static is = 'editor:edit-cell';
 

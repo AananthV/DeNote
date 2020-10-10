@@ -34,5 +34,9 @@
     "port": 8000, // Server port number
     "proxy": "", // in case of proxy eg - /myapp
     "domain": "http://localhost:8000" // Server domain
+  },
+  // Session
+  "session": {
+    "secret": "Shhhhh"
   }
 }

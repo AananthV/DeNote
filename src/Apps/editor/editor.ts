@@ -25,9 +25,9 @@ const app = derby.createApp('editor', __filename);
 
 initializeComponents(app, components);
 
-app.loadViews('/home/aananth/dev/DeNote/views/editor/Pages');
+app.loadViews(__dirname + '/Views');
 
-app.loadStyles('/home/aananth/dev/DeNote/views/editor/Styles');
+app.loadStyles(__dirname + '/Styles');
 
 if (derby.util.isServer) {
     var boostrap = require.resolve('bootstrap/dist/css/bootstrap.min.css');

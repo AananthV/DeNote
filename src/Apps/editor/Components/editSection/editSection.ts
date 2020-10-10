@@ -6,7 +6,7 @@ class SectionData {
 }
 
 class EditSectionComponent extends Component<SectionData> {
-    static view = '/home/aananth/dev/DeNote/views/editor/Components/editSection.html';
+    static view = __dirname + '/editSection.html';
     static DataConstructor = SectionData;
     static is = 'editor:edit-section';
 

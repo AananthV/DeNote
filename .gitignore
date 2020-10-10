@@ -1,6 +1,7 @@
 node_modules/
 dist/
-public/derby/
+public/derby/*
+!public/derby/.gitkeep
 logs/logs*
 package-lock.json
 config/production.json

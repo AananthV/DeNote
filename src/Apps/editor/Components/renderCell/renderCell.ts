@@ -10,7 +10,7 @@ class CellOptions {
 }
 
 class RenderCellComponent extends Component {
-    static view = '/home/aananth/dev/DeNote/views/editor/Components/renderCell.html';
+    static view = __dirname + '/renderCell.html';
     static DataConstructor = CellOptions;
     static is = 'editor:render-cell';
 
