@@ -1,5 +1,6 @@
 node_modules/
 dist/
+public/derby/
 logs/logs*
 package-lock.json
 config/production.json
