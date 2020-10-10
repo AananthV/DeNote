@@ -1,3 +1,4 @@
+import http from 'http';
 import derby from "derby";
 import racerBundle from "racer-bundle";
 import derbyDebug from "derby-debug";
@@ -18,6 +19,7 @@ derby.use(racerBundle);
 
 class App {
     public app: Application;
+    private server: http.Server;
     private derbyApps: any[] = [];
     private backend: any;
     private handlers: any;
@@ -123,8 +125,9 @@ class App {
     }
 
     public listen() {
-        this.app.on('upgrade', this.handlers.upgrade);
-        this.app.listen(this.port, () => {
+        this.server = http.createServer(this.app);
+        this.server.on('upgrade', this.handlers.upgrade);
+        this.server.listen(this.port, () => {
             console.log(`Server is running on port ${this.port}`);
         });
     }
