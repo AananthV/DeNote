@@ -9,6 +9,7 @@ import EditNoteComponent from './Components/editNote';
 import RenderCellComponent from './Components/renderCell';
 import RenderSectionComponent from './Components/renderSection';
 import RenderNoteComponent from './Components/renderNote';
+import EditorComponent from './Components/editor';
 
 import { initializeComponents } from '../base/application';
 
@@ -18,7 +19,8 @@ const components = [
     EditNoteComponent,
     RenderCellComponent,
     RenderSectionComponent,
-    RenderNoteComponent
+    RenderNoteComponent,
+    EditorComponent
 ]
 
 const app = derby.createApp('editor', __filename);

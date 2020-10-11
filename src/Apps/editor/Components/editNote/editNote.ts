@@ -19,7 +19,7 @@ class EditNoteComponent extends Component<NoteData> {
     private note: Element;
 
     init() {
-        this.sections = this.model.ref('sections', this.model.scope('note._3.sections'));
+        this.sections = this.model.ref('sections', this.model.at('note.sections'));
     }
 
     create() {

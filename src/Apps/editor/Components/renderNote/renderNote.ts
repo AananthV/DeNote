@@ -18,7 +18,7 @@ class RenderNoteComponent extends Component<NoteData> {
     private sections: any;
 
     init() {
-        this.sections = this.model.ref('sections', this.model.scope('note._3.sections'));
+        this.sections = this.model.ref('sections', this.model.at('note.sections'));
     }
 
     create() {
