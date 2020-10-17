@@ -1,7 +1,7 @@
 # DeNote
 Productivity focussed real time note taking application with a keyboard first approach for quick editing.
 
-If you're here for a [Delta Winter of Code](https://dwoc.io) project, check out the [Contributor's Guide](https://github.com/AananthV/DeNote/wiki) in the Wiki.
+If you're here for a [Delta Winter of Code](https://dwoc.io) project, check out the [Contributor's Guide](https://github.com/AananthV/DeNote/wiki/Contributor's-Guide) in the Wiki.
 
 ## Preparation
 ### Prerequisites
