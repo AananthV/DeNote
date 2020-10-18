@@ -1,0 +1,281 @@
+/************************************************************
+    GLOBAL
+************************************************************/
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+}
+
+/************************************************************
+    EDITOR
+************************************************************/
+
+/*
+    CONTAINER
+*/
+
+.editor-container {
+    height: 100%;
+}
+
+/*
+    TITLE BAR
+*/
+
+.editor-title-bar {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    border-bottom: 2px solid;
+}
+
+.editor-title-bar input {
+    font-size: 2em;
+    border: 0;
+    padding: 3px;
+    border-right: 2px solid;
+}
+
+.editor-title-bar input:focus {
+    outline: 0;
+}
+
+.editor-title-bar .mode-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.editor-title-bar .mode-container i {
+    cursor: pointer;
+    color: gray;
+}
+
+.editor-title-bar .mode-container i.active {
+    color: black;
+}
+
+/*
+    SPLIT CONTAINER
+*/
+
+.split-container {
+    height: calc(100% - 56px);
+    display: grid;
+}
+
+.split-container .edit {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.split-container .render {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+/************************************************************
+    EDIT
+************************************************************/
+/*
+    NOTE
+*/
+
+.edit .note {
+    padding: 0;
+}
+
+/* 
+    SECTION
+*/
+
+.edit .section {
+    width: calc(100% - 16px);
+    display: grid;
+    margin: 8px;
+}
+
+/*
+    SECTION ADJUST
+*/
+
+.edit .section-adjust {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    height: 100%;
+    width: 1px;
+    overflow: visible;
+    cursor: ew-resize;
+    z-index: 1;
+}
+
+.edit .section-adjust i {
+    background-color: gray;
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* 
+    CELL
+*/
+
+.edit .cell {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.edit .cell-data {
+    white-space: pre-wrap;
+    height: 100% !important;
+    width: 100%;
+    min-height: 200px;
+    padding: 16px;
+    word-wrap: break-word;
+}
+
+.edit .cell-editor {
+    position: absolute;
+    min-height: 200px;
+    height: 100% !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    /* overflow-x: scroll; */
+}
+
+/************************************************************
+    RENDER
+************************************************************/
+
+/*
+    NOTE
+*/
+
+.render .note {
+    padding: 0;
+}
+
+/* 
+    SECTION
+*/
+
+.render .section {
+    width: calc(100% - 16px);
+    display: grid;
+    margin: 8px;
+}
+
+/* 
+    CELL
+*/
+
+.render .cell {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.render .cell-data {
+    white-space: pre-wrap;
+    height: 100% !important;
+    width: 100%;
+    padding: 16px;
+    word-wrap: break-word;
+}
+
+.render .cell-data img {
+    width: 100%;
+    height: auto;
+}
+
+/************************************************************
+    DASHBOARD
+************************************************************/
+
+.dashboard-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+}
+
+/************************************************************
+    NOTEBOOK LIST
+************************************************************/
+
+.notebook-list {
+    height: 100%;
+}
+
+/************************************************************
+    NOTE LIST
+************************************************************/
+
+.note-list {
+    height: 100%;
+}
+
+/************************************************************
+    GENERAL
+************************************************************/
+
+/*
+    LIST
+*/
+
+.list .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 2px solid;
+}
+
+.list .list-header .header-text {
+    text-transform: uppercase;
+}
+
+.list .list-items {
+    height: calc(100% - 54px - 16px);
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+.list .list-item {
+    height: 48px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    padding: 8px 12px;
+
+    line-height: 32px; /* Set line height to (height - padding) to center text. Works only for single line divs tho. */
+
+    border-bottom: 1px solid gray;
+
+    cursor: pointer;
+}
+
+.list .list-item:hover {
+    background-color: #eaeaea;
+}
+
+.list .list-item.active {
+    background-color: #dadada;
+}

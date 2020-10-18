@@ -1,0 +1,20 @@
+<index:>
+    <div class="note-list list">
+        <div class="list-header">
+            <div class="header-text">Notes</div>
+            <button class="btn fas fa-plus" on-click="createNote()"></button>
+        </div>
+        <ul class="list-items">
+            {{ if notes }}
+                {{ each Object.values(notes) as #note, #i }}
+                    <li class="list-item {{ #note.id === selectedNoteId ? 'active' : '' }}" on-click="selectNote(#note.id)">
+                        {{ #note.title }}
+                    </li>
+                {{ /each }}
+            {{ else }}
+                <li class="list-item">
+                    No Notes
+                </li>
+            {{ /if }}
+        </ul>
+    </div>

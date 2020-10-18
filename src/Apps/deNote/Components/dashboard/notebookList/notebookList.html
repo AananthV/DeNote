@@ -1,0 +1,16 @@
+<index:>
+    <div class="notebook-list list">
+        <div class="list-header">
+            <div class="header-text">Notebooks</div>
+            <button class="btn fas fa-plus" on-click="createNotebook()"></button>
+        </div>
+        <ul class="list-items">
+            {{ if notebooks }}
+                {{ each Object.values(notebooks) as #notebook, #i }}
+                    <li class="list-item {{ #notebook.id === selectedNotebookId ? 'active' : '' }}" on-click="selectNotebook(#notebook.id)">
+                        {{ #notebook.title }}
+                    </li>
+                {{ /each }}
+            {{ /if }}
+        </ul>
+    </div>

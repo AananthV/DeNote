@@ -1,1 +1,1 @@
-export { default } from './derbyApplication';
+export { default } from './application';

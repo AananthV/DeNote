@@ -4,12 +4,11 @@ import config from "config";
 import App from "./app";
 import logger from "./Utils/logger";
 
-import Auth from './Apps/auth';
-import Editor from './Apps/editor';
+import DeNote from './Apps/deNote';
 
 const app = new App({
   baseUrl: config.get("server.proxy"),
-  apps: [Auth, Editor],
+  apps: [DeNote],
   dbUrl: config.get("db.url"),
   logger: logger.getNamedLogger("App"),
   port: config.get("server.port"),
