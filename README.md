@@ -1,3 +1,5 @@
+![](public/denote_logo.png)
+
 # DeNote
 Productivity focussed real time note taking application with a keyboard first approach for quick editing.
 
